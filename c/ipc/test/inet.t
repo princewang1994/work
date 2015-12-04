@@ -1,0 +1,12 @@
+inet 1k
+18  12
+inet 1m
+inet 10m
+inet 1k
+38  36
+inet 1m
+inet 10m
+inet 1k
+47  48
+inet 1m
+inet 10m

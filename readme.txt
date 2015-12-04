@@ -1,8 +1,2 @@
-this is a readme file 
-first modify
+git learning
 hehe
-dsjafjdsaowjeo;sfdjaf
-sdaf
-sadfdsjiofwer
-fwsj
-

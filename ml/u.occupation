@@ -1,0 +1,29 @@
+create table job 
+(
+	id int(3) primary key auto_increment,
+	name varchar(30) not null
+);
+
+
+insert into job  values 
+(null,"administrator"),
+(null,"artist       "),
+(null,"doctor       "),
+(null,"educator     "),
+(null,"engineer     "),
+(null,"entertainment"),
+(null,"executive    "),
+(null,"healthcare   "),
+(null,"homemaker    "),
+(null,"lawyer       "),
+(null,"librarian    "),
+(null,"marketing    "),
+(null,"none         "),
+(null,"other        "),
+(null,"programmer   "),
+(null,"retired      "),
+(null,"salesman     "),
+(null,"scientist    "),
+(null,"student      "),
+(null,"technician   "),
+(null,"writer       ")

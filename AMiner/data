@@ -1,0 +1,2000 @@
+#index 1
+
+#* book review: discover linux
+
+#@ marjorie richardson
+
+#o -
+
+#t 1998
+
+#c linux journal
+
+
+
+#index 2
+
+#* mosfet "table" look-up models for circuit simulation
+
+#@ 
+
+#o 
+
+#t 1984
+
+#c integration, the vlsi journal
+
+
+
+#index 3
+
+#* the 'verification' of the protection mechanisms of high-level language machines
+
+#@ virgil d. gligor
+
+#o univ. of maryland, college park
+
+#t 1984
+
+#c international journal of parallel programming
+
+
+
+#index 4
+
+#* another view of f'unctional and multivalued dependencies in the relational database model
+
+#@ m. gyssens;j. paredaens
+
+#o Univ. of Antwerp, Wilrijk, Belgium;-
+
+#t 1984
+
+#c International Journal of Parallel Programming
+
+
+
+#index 5
+
+#* Entity-relationship diagrams which are in BCNF
+
+#@ Sushil Jajodia;Peter A. Ng;Frederick N. Springsteel
+
+#o University of Missouri, Columbia;-;Ballistic Missile Defense Advanced Technology Center, Huntsville, AL
+
+#t 1984
+
+#c International Journal of Parallel Programming
+
+
+
+#index 6
+
+#* The computer comes of age
+
+#@ Rene Moreau
+
+#o -
+
+#t 1984
+
+#c The computer comes of age
+
+
+
+#index 7
+
+#* Computationally efficient algorithms for a one-time pad scheme
+
+#@ A. G. Akritas;S. S. Lyengar;A. A. Rampuria
+
+#o Univ. of Kansas, Lawrence;Louisiana State Univ., Baton Rouge;Univ. of Kansas, Lawrence
+
+#t 1984
+
+#c International Journal of Parallel Programming
+
+
+
+#index 8
+
+#* The hierarchical ordering in Multiattribute files
+
+#@ C. C. Chang;M. W. Du;R. C. T. Lee
+
+#o National Chiao Tung Univ., Hsinchu, Republic of China;National Chiao Tung Univ., Hsinchu, Republic of China;National Tsing Hua Univ., Hsinchu, Republic of China
+
+#t 1983
+
+#c Information Sciences: an International Journal
+
+
+
+#index 9
+
+#* Insertion languages
+
+#@ David Haussler
+
+#o University of Denver, Denver, CO
+
+#t 1983
+
+#c Information Sciences: an International Journal
+
+
+
+#index 10
+
+#* The Three-Machine No-Wait Flow Shop is NP-Complete
+
+#@ Hans Röck
+
+#o Technical University of Berlin, Berlin, West Germany
+
+#t 1984
+
+#c Journal of the ACM (JACM)
+
+#% 289259
+
+
+
+#index 11
+
+#* Lower Bounds and Fast Algorithms for Sequence Acceleration
+
+#@ George M. Trojan
+
+#o The Universtty of Western Ontario, London, Ontarto, Canada
+
+#t 1984
+
+#c Journal of the ACM (JACM)
+
+
+
+#index 12
+
+#* Space-Time Trade-Offs for Banded Matrix Problems
+
+#@ John E. Savage
+
+#o Brown Umversity, Providence, Rhode Island
+
+#t 1984
+
+#c Journal of the ACM (JACM)
+
+#% 289024
+
+#% 408638
+
+#% 600828
+
+#% 688897
+
+
+
+#index 13
+
+#* The VLSI Complexity of Selected Graph Problems
+
+#@ Joseph Já Já
+
+#o The Pennsylvania State Univ., University Park, PA
+
+#t 1984
+
+#c Journal of the ACM (JACM)
+
+#% 769
+
+#% 289452
+
+#% 319821
+
+#% 408343
+
+#% 598672
+
+#% 598673
+
+#% 598675
+
+#% 600547
+
+#% 600560
+
+#% 600811
+
+#% 690081
+
+#% 1068477
+
+
+
+#index 14
+
+#* Computability with Pascal
+
+#@ John S. Mallozzi;Nicholas J. De Lillo
+
+#o Iona College, New Rochelle, NY;Manhattan College, Bronx, NY
+
+#t 1984
+
+#c Computability with Pascal
+
+
+
+#index 15
+
+#* Ambiguity and decision problems concerning number systems
+
+#@ Karel Culik, II;Arto Salomaa
+
+#o Univ. of Waterloo, Waterloo, Ont., Canada;Univ. of Waterloo, Waterloo, Ont., Canada
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 16
+
+#* The implication problem for functional and inclusion dependencies
+
+#@ John C. Mitchell
+
+#o MIT, Cambridge, MA
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 17
+
+#* Cynamic parallel memories
+
+#@ Uzi Vishkin;Avi Wigderson
+
+#o New York Univ., New York, NY;Univ. of California, Berkeley
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 18
+
+#* Succinct representations of graphs
+
+#@ Hana Galperin;Avi Wigderson
+
+#o Mini Systems, Inc., Herzlia, Israel;Univ. of California, Berkeley
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 19
+
+#* On storage media with after effects
+
+#@ H. S. Witsenhausen;A. D. Wyner
+
+#o Bell Laboratories, Murray Hill, NJ;Bell Laboratories, Murray Hill, NJ
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 20
+
+#* A necessary and sufficient condition in order that a Herbrand interpretation be expressive relative to recursive programs
+
+#@ 
+
+#o 
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 21
+
+#* Enclosing methods in perturbed nonlinear operator equations
+
+#@ J W. Schmidt;H Schneider
+
+#o -;-
+
+#t 1984
+
+#c Computing
+
+
+
+#index 22
+
+#* On two more Eigenvalue methods for an alternating sequential parallel system
+
+#@ Y Wallach
+
+#o -
+
+#t 1984
+
+#c Computing
+
+
+
+#index 23
+
+#* Random variate generation for unimodal and monotone densities
+
+#@ L Devroye
+
+#o -
+
+#t 1984
+
+#c Computing
+
+
+
+#index 24
+
+#* An approximation method of the local type. Application to a problem of heart potential mapping
+
+#@ M Bozzini;F De Tisi;L Lenarduzzi
+
+#o -;-;-
+
+#t 1984
+
+#c Computing
+
+
+
+#index 25
+
+#* Computing surfaces of constant mean curvature with singularities
+
+#@ D E Hewgill
+
+#o -
+
+#t 1984
+
+#c Computing
+
+
+
+#index 26
+
+#* Software engineering with MODULA-2 and ADA
+
+#@ Richard Wiener;Richard Sincovec
+
+#o -;Univ. of Colorado, Colorado Springs
+
+#t 1984
+
+#c Software engineering with MODULA-2 and ADA
+
+
+
+#index 27
+
+#* Frame theory and computations
+
+#@ Viacheslav E. Wolfengagen
+
+#o Moscow Engineering and Physics Institute, Moscow, USSR
+
+#t 1984
+
+#c Computers and Artificial Intelligence
+
+
+
+#index 28
+
+#* Natural language interface to the question-answering system for physicians
+
+#@ Leonard Bolc;Tomek Strzalkowski
+
+#o Warsaw University, Warsaw, Poland;Simon Fraser Univ., B.C., Canada
+
+#t 1984
+
+#c Computers and Artificial Intelligence
+
+
+
+#index 29
+
+#* Some issues in the semantics and pragmatics of definite reference in the context of natural language database access
+
+#@ Genevieve Berry-Rogghe
+
+#o Temple Univ., Philadelphia, PA
+
+#t 1984
+
+#c Computers and Artificial Intelligence
+
+
+
+#index 30
+
+#* Stationary wave solutions of a system of reaction-diffusion equations derived from the Fitzhugh-Nagumo equations
+
+#@ Gene A. Klaasen;William C. Troy
+
+#o Univ. of Tennessee, Knoxville;Univ. of Pittsburgh, Pittsburgh, PA
+
+#t 1984
+
+#c SIAM Journal on Applied Mathematics
+
+
+
+#index 31
+
+#* Up and running: the small business computer implementation cookbook
+
+#@ Jess W. Curry, Jr.;David M. Bonner
+
+#o Arthur Young;Arthur Young
+
+#t 1984
+
+#c Up and running: the small business computer implementation cookbook
+
+
+
+#index 32
+
+#* Proc. IFIP working conference on Programming Languages and System Design
+
+#@ J Bormann
+
+#o Technical Univ. of Dresden, East Germany
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 33
+
+#* Fast automatic liveness analysis of hierarchical parallel systems
+
+#@ Johannes Rohrich
+
+#o Univ. Karlsruhe, Karlsruhe, W. Germany
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 34
+
+#* Concatenable type declarations: their applications and implementaion
+
+#@ A Kreczmar;A Salwicki
+
+#o Univ. of Warsaw, Poland;Univ. of Warsaw, Poland
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 35
+
+#* On the coherence of programming language and programming methodology
+
+#@ Broy Manfred;Peter Pepper
+
+#o Technishe Univ. Munchen, Munich, West Germany;Technishe Univ. Munchen, Munich, West Germany
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 36
+
+#* On the design of data abstraction mechanisms for compiler description languages1)
+
+#@ Harald Ganzinger
+
+#o Technische Univ. Munchen, Munich, West Germany
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 37
+
+#* The remodularization of a compiler by abstract data types
+
+#@ Klaus Bothe
+
+#o Humboldt-Univ. Berlin, Berlin, West Germany
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 38
+
+#* Experience with abstract data type specifications in a compiler project
+
+#@ Ulrich L. Hupbach;Heinz Kaphengst
+
+#o -;-
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 39
+
+#* XYZ: a program development environment based on temporal logic
+
+#@ Chih-sung Tang
+
+#o Academia Sinica, Beijing, China
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 40
+
+#* Design and verification oriented microprogram transformations
+
+#@ Piotr Dembinski
+
+#o Polish Academy of Sciences, Warsaw, Poland
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 41
+
+#* ELSA - an extensible programming system
+
+#@ C. H. Lindsey
+
+#o Univ. of Manchester, Manchester, UK
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 42
+
+#* A skeleton interpreter for specialized languages
+
+#@ J Steensgaard-Madsen
+
+#o Univ. of Copenhagen, Copenhagen, Denmark
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 43
+
+#* Comparing PASCAL and MODULA-2 as systems programming languages
+
+#@ Pieter H. Hartel
+
+#o Univ. van Amsterdam, Plantage Muidergracht, Amsterdam
+
+#t 1983
+
+#c Proc. IFIP working conference on Programming Languages and System Design
+
+
+
+#index 44
+
+#* ADA: Concurrent Programming
+
+#@ Narain Gehani
+
+#o AT&T Bell Laboratories, Murray Hill, NJ
+
+#t 1984
+
+#c ADA: Concurrent Programming
+
+
+
+#index 45
+
+#* Computers, Data Processing, and The Law
+
+#@ Steven L. Mandell
+
+#o -
+
+#t 1984
+
+#c Computers, Data Processing, and The Law
+
+
+
+#index 46
+
+#* On the Multiple Implementation of Abstract Data Types Within a Computation
+
+#@ J. R White
+
+#o Xerox Palo Alto Research Center, Palo Alto, CA
+
+#t 1983
+
+#c IEEE Transactions on Software Engineering
+
+#! A fundamental step in the software design process is the selection of a refinement (implementation) for a data abstraction. This step traditionally involves investigating the expected performance of a system under different refinements of an abstraction and then selecting a single alternative which minimizes some performance cost metric. In this paper we reformulate this design step to allow different refinements of the same data abstraction within a computation. This reformulation reflects the fact that the implementation appropriate for a data abstraction is dependent on the behavior exhibited by the objects of the abstraction. Since this behavior can vary among the objects of a computation, a single refinement is often inappropriate. Accordingly, three frameworks are presented for understanding and representing variations in the behavior of objects and, thus, the potential for multiple implementations. The three frameworks are based upon: 1) a static partitioning of objects into disjoint implementation classes; 2) static partitioning of classes into implementation regions; and 3) dynamic partitioning of classes into implementation regions. These frameworks and analytic tools useful in investigating expected performance under multiple implementations are described in detail.
+
+
+
+#index 47
+
+#* Matings in matrices
+
+#@ Wolfgang Bibel
+
+#o Technische Univ. Munchen, Munich, West Germany
+
+#t 1983
+
+#c Communications of the ACM
+
+#% 25470
+
+#% 289292
+
+#% 289318
+
+#% 384112
+
+#% 456887
+
+#% 456888
+
+#% 556913
+
+#% 569085
+
+
+
+#index 48
+
+#* on Automata, languages and programming
+
+#@ M. Nielsen
+
+#o -
+
+#t 1982
+
+#c on Automata, languages and programming
+
+
+
+#index 49
+
+#* Register Allocation in Optimizing Compilers
+
+#@ Bruce W. Leverett
+
+#o -
+
+#t 1983
+
+#c Register Allocation in Optimizing Compilers
+
+
+
+#index 50
+
+#* Polymorphic programming languages: design and implementation
+
+#@ David M. Harland
+
+#o Univ. of Glasgow, Glasgow, UK
+
+#t 1984
+
+#c Polymorphic programming languages: design and implementation
+
+
+
+#index 51
+
+#* Analysis of speedup in distributed algorithms
+
+#@ John P. Fishburn
+
+#o -
+
+#t 1984
+
+#c Analysis of speedup in distributed algorithms
+
+
+
+#index 52
+
+#* Automated microcode synthesis
+
+#@ Robert A. Mueller
+
+#o -
+
+#t 1984
+
+#c Automated microcode synthesis
+
+
+
+#index 53
+
+#* A class of generalized stochastic Petri nets for the performance evaluation of multiprocessor systems
+
+#@ Marco Ajmone Marsan;Gianni Conte;Gianfranco Balbo
+
+#o Politecnico di Torino, Turin, Italy;Politecnico di Torino, Turin, Italy;Univ. di Torino, Turin, Italy
+
+#t 1984
+
+#c ACM Transactions on Computer Systems (TOCS)
+
+#% 317871
+
+#% 598103
+
+#% 689727
+
+
+
+#index 54
+
+#* Static grouping of small objects to enhance performance of a paged virtual memory
+
+#@ James W. Stamos
+
+#o Xerox Palo Alto Research Center, Palo Alto, CA
+
+#t 1984
+
+#c ACM Transactions on Computer Systems (TOCS)
+
+#% 103
+
+#% 288713
+
+#% 317781
+
+#% 320071
+
+#% 320108
+
+#% 321612
+
+#% 322248
+
+#% 348986
+
+#% 602671
+
+#% 602693
+
+#% 602694
+
+#% 602695
+
+#% 606655
+
+#% 607606
+
+#% 669003
+
+#% 669876
+
+
+
+#index 55
+
+#* A supervised learning algorithm for hierarchical classification of fuzzy patterns
+
+#@ Prasenjit Biswas;Arun K. Majumdar
+
+#o Southern Methodis Univ., Dallas, TX;Indian Institute of Technology, Kharagpur, India
+
+#t 1983
+
+#c Information Sciences: an International Journal
+
+
+
+#index 56
+
+#* Quantifiers in the formulation of multiple objective decision functions
+
+#@ Ronald R. Yager
+
+#o National Science Foundation, Washington, DC
+
+#t 1983
+
+#c Information Sciences: an International Journal
+
+
+
+#index 57
+
+#* On the implication operator in fuzzy logic
+
+#@ Ronald R. Yager
+
+#o National Science Foundation, Washington, DC
+
+#t 1983
+
+#c Information Sciences: an International Journal
+
+
+
+#index 58
+
+#* The application of coding theory to the design of combinatorial filing schemes of any order
+
+#@ Lois Wright Hawkes
+
+#o The Florida State Univ., Tallahassee,
+
+#t 1983
+
+#c Information Sciences: an International Journal
+
+
+
+#index 59
+
+#* Algorithmic theories of data structures
+
+#@ Andrzej Salwicki
+
+#o Univ. of Warsaw, Warsaw, Poland
+
+#t 1982
+
+#c on Automata, languages and programming
+
+
+
+#index 60
+
+#* Micro-PROLOG: programming in logic
+
+#@ K. L Clark;F. G McCabe
+
+#o -;-
+
+#t 1984
+
+#c Micro-PROLOG: programming in logic
+
+
+
+#index 61
+
+#* The DISS methodology of distributed system simulation
+
+#@ Myron Melman;Miron Livny
+
+#o The Weizmann Institute of Science, Rehovot, Israel;Univ. of Wisconsin - Madison, Madison
+
+#t 1984
+
+#c Simulation
+
+
+
+#index 62
+
+#* Information Technology Research Development Applications
+
+#@ C J. van Rijsbergen
+
+#o University College, Dublin, Ireland
+
+#t 1984
+
+#c Information Technology Research Development Applications
+
+
+
+#index 63
+
+#* Special-purpose hardware and effective information processing
+
+#@ Maristella Agosti
+
+#o Univ. of Padua, Padova, Italy
+
+#t 1984
+
+#c Information Technology Research Development Applications
+
+
+
+#index 64
+
+#* Relevance feedback and a fuzzy set of search terms in an information retrieval system
+
+#@ A F. Smeaton
+
+#o University College Dublin, Dublin, Ireland
+
+#t 1984
+
+#c Information Technology Research Development Applications
+
+
+
+#index 65
+
+#* Direct file organization for lemmatized text retrieval
+
+#@ K Devine;F J. Smith
+
+#o The Queen's University of Belfast, Belfast, UK;The Queen's University of Belfast, Belfast, UK
+
+#t 1984
+
+#c Information Technology Research Development Applications
+
+
+
+#index 66
+
+#* Soft evaluation of Boolean search queries in information retrieval systems
+
+#@ C D. Paice
+
+#o Univ. of Lancaster, Lancaster, UK
+
+#t 1984
+
+#c Information Technology Research Development Applications
+
+
+
+#index 67
+
+#* Augmented semantic networks for an enterprise knowledge base
+
+#@ Paltin Sturdza
+
+#o The Medical College of Pennsylvania, Philadelphia, PA
+
+#t 1984
+
+#c Information Technology Research Development Applications
+
+
+
+#index 68
+
+#* Technology and Science of Informatics
+
+#@ Bertrand Meyer
+
+#o Univ. of California, CA
+
+#t 1984
+
+#c Technology and Science of Informatics
+
+
+
+#index 69
+
+#* A comparative study of some distributed systems
+
+#@ Marc Guillemont
+
+#o INRIA, Le Chesnay Cedex, France
+
+#t 1984
+
+#c Technology and Science of Informatics
+
+
+
+#index 70
+
+#* Controlled execution of timed petri nets
+
+#@ Philippe Chretienne
+
+#o Institut de Programmation, Paris, France
+
+#t 1984
+
+#c Technology and Science of Informatics
+
+
+
+#index 71
+
+#* A two-level control structure for parallel heuristic programming
+
+#@ Andre Schiper;Giovanni Coray;Beat Hirsbrunner
+
+#o EPFL, Lausanne, Switzerland;EPFL, Lausanne, Switzerland;EPFL, Lausanne, Switzerland
+
+#t 1984
+
+#c Technology and Science of Informatics
+
+
+
+#index 72
+
+#* SCEPTRE: proposed standard for a real-time executive kernel
+
+#@ F Browaeys;H Derriennic;P Desclaud;H Fallour;C Faulle;J Febvre;J E. Hanne;M Kronental;J J. Simon;D Vojnovic
+
+#o -;-;-;-;-;-;-;-;-;-
+
+#t 1984
+
+#c Technology and Science of Informatics
+
+
+
+#index 73
+
+#* The application of human factors to the needs of the novice computer user
+
+#@ Anne Lee Paxton;Edward J. Turner
+
+#o Old Dominion Univ. Norfolk, VA;Univ. of North Carolina at Greensboro, Greensboro
+
+#t 1984
+
+#c International Journal of Man-Machine Studies
+
+
+
+#index 74
+
+#* Type-checking in an untyped language
+
+#@ Allan Ramsay
+
+#o Univ. of Sussex, Brighton, UK
+
+#t 1984
+
+#c International Journal of Man-Machine Studies
+
+
+
+#index 75
+
+#* A methodology for interactive evaluation of user reactions to software packagesn empirical analysis of system performance, interaction, and run time
+
+#@ Avi Rushinek;Sara F. Rushinek;Joel Stutz
+
+#o Univ. of Miami, Coral Gables, FL;Univ. of Miami, Coral Gables, FL;Univ. of Miami, Coral Gables, FL
+
+#t 1984
+
+#c International Journal of Man-Machine Studies
+
+
+
+#index 76
+
+#* The depth/breadth trade-off in the design of menu-driven user interfaces
+
+#@ John I. Kiger
+
+#o American Bell, Holmdel, NJ
+
+#t 1984
+
+#c International Journal of Man-Machine Studies
+
+
+
+#index 77
+
+#* The influence of rule-generated stress on computer-synthesized speech
+
+#@ David L. McPeters;Alan L. Tharp
+
+#o North Carolina State Univ., Raleigh;North Carolina State Univ., Raleigh
+
+#t 1984
+
+#c International Journal of Man-Machine Studies
+
+
+
+#index 78
+
+#* Formal specification of interactive graphics programming languages
+
+#@ William R. Mallgren
+
+#o -
+
+#t 1983
+
+#c Formal specification of interactive graphics programming languages
+
+
+
+#index 79
+
+#* VAX/VMS internals and data structures
+
+#@ Lawrence J. Kenah;Simon F. Bate
+
+#o Digital Equipment Corp.;Tandem Computers Inc.
+
+#t 1984
+
+#c VAX/VMS internals and data structures
+
+
+
+#index 80
+
+#* Smalltalk-80: bits of history, words of advice
+
+#@ Glenn Krasner
+
+#o Xerox Palo Alto Research Center, Palo Alto, CA
+
+#t 1983
+
+#c Smalltalk-80: bits of history, words of advice
+
+
+
+#index 81
+
+#* Overcoming computer illiteracy: a friendly introduction to computers
+
+#@ Susan Curran;Ray Curnow
+
+#o -;-
+
+#t 1984
+
+#c Overcoming computer illiteracy: a friendly introduction to computers
+
+
+
+#index 82
+
+#* Electronic analog-to-digital converters: principles, circuits, devices, testing
+
+#@ Dieter Seitzer;Gunter Pretzl;Nadder A. Hamdy
+
+#o Univ. of Erlangen-Nuremberg, West Germany;Univ. of Erlangen-Nuremberg, West Germany;Univ. of Assiut, Egypt
+
+#t 1983
+
+#c Electronic analog-to-digital converters: principles, circuits, devices, testing
+
+
+
+#index 83
+
+#* A practical guide to designing expert systems
+
+#@ Sholom M. Weiss;Casimir A. Kulikowski
+
+#o -;-
+
+#t 1984
+
+#c A practical guide to designing expert systems
+
+
+
+#index 84
+
+#* Parallel programming in ansi standard ADA
+
+#@ George W. Cherry
+
+#o Thought**Tools and George Washington University
+
+#t 1984
+
+#c Parallel programming in ansi standard ADA
+
+
+
+#index 85
+
+#* Introduction to computer science using the TURING programming language
+
+#@ R C. Holt;J N.P Hume
+
+#o Univ. of Toronto, Toronto, Ont., Canada;Univ. of Toronto, Toronto, Ont., Canada
+
+#t 1984
+
+#c Introduction to computer science using the TURING programming language
+
+
+
+#index 86
+
+#* Best approximate circles on integer grids
+
+#@ M. D. McIlroy
+
+#o AT&T Bell Laboratories
+
+#t 1983
+
+#c ACM Transactions on Graphics (TOG)
+
+#% 317819
+
+#% 320076
+
+
+
+#index 87
+
+#* A multiresolution spline with application to image mosaics
+
+#@ Peter J. Burt;Edward H. Adelson
+
+#o RCA David Sarnoff Research Center;RCA David Sarnoff Research Center
+
+#t 1983
+
+#c ACM Transactions on Graphics (TOG)
+
+
+
+#index 88
+
+#* Efficient polygon-filling algorithms for raster displays
+
+#@ Michael R. Dunlavey
+
+#o Boston College, Boston, MA
+
+#t 1983
+
+#c ACM Transactions on Graphics (TOG)
+
+#% 3104
+
+#% 4093
+
+#% 602878
+
+#% 603545
+
+
+
+#index 89
+
+#* Physical structures and application on Database design techniques II
+
+#@ S B. Yao;T L. Kunii
+
+#o Univ. of Maryland, College Park;Univ. of Tokyo, Japan
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 90
+
+#* Physical database design techniques
+
+#@ Mario Schkolnick
+
+#o IBM Research Laboratory, San Jose, CA
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 91
+
+#* Design of optimal balanced filing schemes
+
+#@ Sumiyasu Yamamoto
+
+#o Hiroshima Univ., Hiroshima, Japan
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 92
+
+#* Parallel join and sorting algorithms
+
+#@ Mamoru Maekawa
+
+#o Univ. of Tokyo, Japan
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 93
+
+#* A language for office and business automation
+
+#@ Moshe M. Zloof
+
+#o IBM Thomas J. Watson Research Center, Yorktown Heights, NY
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 94
+
+#* APAD: an application-adaptable database system - its architecture and design -
+
+#@ Hiroyuki Kitagawa;Tosiyasu L. Kunii
+
+#o Univ. of Tokyo, Japan;Univ. of Tokyo, Japan
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 95
+
+#* Specific requirements in engineering data base
+
+#@ Hideo Matsuka;Sakae Uno;Masaaki Sibuya
+
+#o Tokyo Scientific Center, IBM Japan, Ltd., Tokyo, Japan;Tokyo Scientific Center, IBM Japan, Ltd., Tokyo, Japan;Tokyo Scientific Center, IBM Japan, Ltd., Tokyo, Japan
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 96
+
+#* Pattern databases
+
+#@ Larry S. Davis;T L. Kunii
+
+#o Univ. of Texas, Austin;Univ. of Tokyo, Japan
+
+#t 1982
+
+#c Physical structures and application on Database design techniques II
+
+
+
+#index 97
+
+#* Memories that shaped an industry
+
+#@ Emerson W. Pugh
+
+#o -
+
+#t 1984
+
+#c Memories that shaped an industry
+
+
+
+#index 98
+
+#* Effective methods of EDP quality assurance
+
+#@ William E. Perry
+
+#o -
+
+#t 1983
+
+#c Effective methods of EDP quality assurance
+
+
+
+#index 99
+
+#* The data center disaster consultant
+
+#@ Kenniston W. Lord, Jr.
+
+#o -
+
+#t 1983
+
+#c The data center disaster consultant
+
+
+
+#index 100
+
+#* A structured approach to systems testing
+
+#@ William E. Perry
+
+#o -
+
+#t 1983
+
+#c A structured approach to systems testing
+
+
+
+#index 101
+
+#* Creating and planning the corporate data base system project
+
+#@ Leo J. Cohen
+
+#o -
+
+#t 1983
+
+#c Creating and planning the corporate data base system project
+
+
+
+#index 102
+
+#* Managing systems maintenance
+
+#@ William E. Perry
+
+#o -
+
+#t 1983
+
+#c Managing systems maintenance
+
+
+
+#index 103
+
+#* Smalltalk-80: the language and its implementation
+
+#@ Adele Goldberg;David Robson
+
+#o Xerox Palo Alto Research Center;Xerox Palo Alto Research Center
+
+#t 1983
+
+#c Smalltalk-80: the language and its implementation
+
+#! From the Preface (See Front Matter for full Preface) Advances in the design and production of computer hardware have brought many more people into direct contact with computers. Similar advances in the design and production of computer software are required in order that this increased contact be as rewarding as possible. The Smalltalk-80 system is a result of a decade of research into creating computer software that is appropriate for producing highly functional and interactive contact with personal computer systems. This book is the first detailed account of the Smalltalk-80 system. It is divided into four major parts: Part One -- an overview of the concepts and syntax of the programming language. Part Two -- an annotated and illustrated specification of the system's functionality. Part Three -- an example of the design and implementation of a moderate-size application. Part Four -- a specification of the Smalltalk-80 virtual machine.
+
+
+
+#index 104
+
+#* Tree automata and attribute grammars
+
+#@ Tsutomu Kamimura
+
+#o Univ. of Kansas, Lawrence
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 105
+
+#* Commutative grammars: the complexity of uniform word problems
+
+#@ Dung T. Huynh
+
+#o Univ. des Saarlandes, Saarbrucken, West Germany
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 106
+
+#* On the random oracle hypothesis
+
+#@ Stuart A. Kurtz
+
+#o Univ. of Chicago, Chicago, IL
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 107
+
+#* Deterministic process logic is elementary
+
+#@ Joseph Y. Halpern
+
+#o IBM Research Laboratory, San Jose, CA
+
+#t 1984
+
+#c Information and Control
+
+
+
+#index 108
+
+#* Planning Routes through uncertain territory
+
+#@ Drew McDermott;Ernest Davis
+
+#o Yale Univ., New Haven, CT;Yale Univ., New Haven, CT
+
+#t 1984
+
+#c Artificial Intelligence
+
+
+
+#index 109
+
+#* Extended person-machine interface
+
+#@ Rachel Reichman-Adar
+
+#o Univ. of California, La Jolla
+
+#t 1984
+
+#c Artificial Intelligence
+
+
+
+#index 110
+
+#* Sequential program structures
+
+#@ Jim Welsh;John Elder;David Bustard
+
+#o University of Queensland, Australia;Queen's University of Belfast, UK;Queen's University of Belfast, UK
+
+#t 1984
+
+#c Sequential program structures
+
+
+
+#index 111
+
+#* LISP programming
+
+#@ I Danicic
+
+#o University College of Wales, Wales, UK
+
+#t 1983
+
+#c LISP programming
+
+
+
+#index 112
+
+#* Microcomputers and their commercial applications
+
+#@ D E. Avison
+
+#o University of Aston in Birmingham, Birmingham, UK
+
+#t 1983
+
+#c Microcomputers and their commercial applications
+
+
+
+#index 113
+
+#* From logic to computers
+
+#@ P J. Thewlis;B N.T Foxon
+
+#o Leicester Polytechnic, Leicester, UK;Leicester Polytechnic, Leicester, UK
+
+#t 1983
+
+#c From logic to computers
+
+
+
+#index 114
+
+#* A first course in formal language theory
+
+#@ V J. Rayward-Smith
+
+#o University of East Anglia, Norwich, UK
+
+#t 1983
+
+#c A first course in formal language theory
+
+
+
+#index 115
+
+#* UNIX for users
+
+#@ C D.F Miller;R D. Boyle
+
+#o Heriot-Watt Univ., Edinburgh, UK;University of Leeds, UK
+
+#t 1983
+
+#c UNIX for users
+
+
+
+#index 116
+
+#* Centralized versus decentralized computing: organizational considerations and management options
+
+#@ John Leslie King
+
+#o Univ. of California, Irvine
+
+#t 1983
+
+#c ACM Computing Surveys (CSUR)
+
+#% 317884
+
+#% 317895
+
+#% 317919
+
+#% 317957
+
+#% 318878
+
+#% 318955
+
+#% 319551
+
+#% 319785
+
+#% 319787
+
+#% 320151
+
+#% 320152
+
+#% 320157
+
+#% 321669
+
+#% 322546
+
+#% 325553
+
+#% 374487
+
+#% 374518
+
+#% 374920
+
+#% 408020
+
+#% 599155
+
+#% 668677
+
+#% 840575
+
+
+
+#index 117
+
+#* Principles of transaction-oriented database recovery
+
+#@ Theo Haerder;Andreas Reuter
+
+#o Univ. of Kaiserslautern, West Germany;IBM Research Laboratory, San Jose, CA
+
+#t 1983
+
+#c ACM Computing Surveys (CSUR)
+
+#% 2008
+
+#% 287377
+
+#% 287664
+
+#% 287672
+
+#% 287725
+
+#% 317894
+
+#% 317986
+
+#% 317987
+
+#% 317988
+
+#% 319216
+
+#% 319549
+
+#% 320902
+
+#% 531907
+
+#% 601806
+
+#% 601807
+
+#% 635165
+
+
+
+#index 118
+
+#* Voice response systems
+
+#@ D L. Lee;F H. Lochovsky
+
+#o Univ. of Toronto, Toronto, Canada;Univ. of Toronto, Toronto, Canada
+
+#t 1983
+
+#c ACM Computing Surveys (CSUR)
+
+#% 2008
+
+#% 4834
+
+#% 375503
+
+#% 407975
+
+#% 482080
+
+#% 598002
+
+#% 602578
+
+
+
+#index 119
+
+#* Algorithms for trie compaction
+
+#@ M. Al-Suwaiyel;E Horowitz
+
+#o Univ. of Southern California, CA;Univ. of Southern California, CA
+
+#t 1984
+
+#c ACM Transactions on Database Systems (TODS)
+
+#% 1158
+
+#% 252608
+
+#% 287327
+
+#% 287498
+
+#% 289081
+
+#% 326293
+
+#% 326878
+
+#% 408504
+
+#% 688702
+
+#! The trie data structure has many properties which make it especially attractive for representing large files of data. These properties include fast retrieval time, quick unsuccessful search determination, and finding the longest match to a given identifier. The main drawback is the space requirement. In this paper the concept of trie compaction is formalized. An exact algorithm for optimal trie compaction and three algorithms for approximate trie compaction are given, and an analysis of the three algorithms is done. The analysis indicate that for actual tries, reductions of around 70 percent in the space required by the uncompacted trie can be expected. The quality of the compaction is shown to be insensitive to the number of nodes, while a more relevant parameter is the alphabet size of the key.
+
+
+
+#index 120
+
+#* LISP: a gentle introduction to symbolic computation
+
+#@ David S. Touretzky
+
+#o Carnegie-Mellon Univ., Pittsburgh, PA
+
+#t 1984
+
+#c LISP: a gentle introduction to symbolic computation
+
+
+
+#index 121
+
+#* Distributed databases principles and systems
+
+#@ Stefano Ceri;Giuseppe Pelagatti
+
+#o Politecnico di Milano, Milan, Italy;Politecnico di Milano, Milan, Italy
+
+#t 1984
+
+#c Distributed databases principles and systems
+
+
+
+#index 122
+
+#* Proc. of the symposium on A new approach to scientific computation
+
+#@ Ulrich W. Kulisch;Willard L. Miranker
+
+#o Univ. of Karlsruhe, Karlsruhe, West Germany;IBM Thomas J. Watson Research Center, Yorktown Heights, NY
+
+#t 1983
+
+#c Proc. of the symposium on A new approach to scientific computation
+
+
+
+#index 123
+
+#* A new arithmetic for scientific computation
+
+#@ Ulrich Kulisch
+
+#o University of Karlsruhe, Karlsruhe, West Germany
+
+#t 1983
+
+#c Proc. of the symposium on A new approach to scientific computation
+
+
+
+#index 124
+
+#* Computer demonstration packages for standard problems of numerical mathematics
+
+#@ Siegfried M. Rump
+
+#o Univ. of Karlsruhe, Karlsruhe, West Germany
+
+#t 1983
+
+#c Proc. of the symposium on A new approach to scientific computation
+
+
+
+#index 125
+
+#* Solving algebraic problems with high accuracy
+
+#@ Siegfried M. Rump
+
+#o Univ. of Karlsruhe, Karlsruhe, West Germany
+
+#t 1983
+
+#c Proc. of the symposium on A new approach to scientific computation
+
+
+
+#index 126
+
+#* Evaluation of arithmetic expressions with maximum accuracy
+
+#@ Harald Böhm
+
+#o Univ. of Karlsruhe, Karlsruhe, West Germany
+
+#t 1983
+
+#c Proc. of the symposium on A new approach to scientific computation
+
+
+
+#index 127
+
+#* Solving function space problems with guaranteed close bounds
+
+#@ Edgar Kaucher
+
+#o Univ. of Karlsruhe, Karlsruhe, West Germany
+
+#t 1983
+
+#c Proc. of the symposium on A new approach to scientific computation
+
+
+
+#index 128
+
+#* Ultra-arithmetic: the digital computer set in function space
+
+#@ W L. Miranker
+
+#o IBM Thomas J. Watson Research Center, Yorktown Heights, NY
+
