@@ -1,103 +1,114 @@
 #!/usr/bin/python
+import math
 
-#number of servers 
-S=5
-
-#number of resource 
-
-rName=['RAM','CPU','DISK']
-
-R=len(rName)
-
-#capacity
-C={'RAM':[100,100,100,100,100],'CPU':[100,100,100,100,100],'DISK':[100,100,100,100,100]}
+from getdata import get_data
+from getdata import _get_data
+from Bid import *
 
 
-#number of bids
-I=10
-
-#parameter of server cost
-beta={'RAM':[2,2,2,2,2],'CPU':[2,2,2,2,2],'DISK':[2,2,2,2,2]} 
-h={'RAM':[2,2,2,2,2],'CPU':[2,2,2,2,2],'DISK':[2,2,2,2,2]} 
-
-
-
-class Bid
 	
-	def __init__(self,t1,t2,d,b):
-		self.t1=t1
-		self.t2=t2
-		self.d=d
-		self.b=b
-	'''
-		the payment of bid i
-	'''
-	def _p(self,s):
-		p_tot=0
-		for t in xrange(t1,t2+1):
-			for r in rName:
-				p_tot+=self.d(r,t)*p(r,s)
-		return p_tot
-		
-	'''
-		utility of bid i
-	'''
-	def u(self):
-		return self.b-self._p()
-	
-	def server_sel(self): 
-		_max=-1
-		#max utility server 
-		si=0
-		for s in xrange(S):
-			u=self.u()
-			if u>_max
-				_max=u
-				si=s
-
-		#return the max utility and server 
-		return (_max , si)
-				
-		
-''' server cost '''		
-def f(r,s,x):
-	return h[r][s]*(x**(1+beta[r][s]))
-
-''' marginal payment '''
-def p(r,s):
-	pass
 	
 '''CORE function'''
-def CORE(bids):
+def CORE(bid):
 
-	for bi in bids:
-		x=[]
-		for i in xrange(S):
-		       x.append(0)
-
-		(ui,si)=bi.server_sel()
-
-		#if utility is optimal
-		if ui > 0 :
-
-			_p=bi._p()
-
-			#serve the bid 
-			x[si]=1
-
-		#else reject it 
-			
-	return (x,_p)
+	global S
+	x=[]
+	for i in xrange(S):
+	       x.append(0)
 
 
+	
+	print 'bid:'
+	print 't1=',bid.t1
+	print 't2=',bid.t2
+	print 'bi=',bid.b
+#	print 'd=',bid.d
+	
+	(ui,si)=bid.server_sel()
+
+	p_hat=0.0
+
+	#if utility is optimal
+	if ui > 0 :
+
+		p_hat=bid._p(si)
+
+		#serve the bid 
+		x[si]=1
+		
+		
+		for r in rName:
+			for t in xrange(bid.t1,bid.t2+1):
+				#allocate resource
+				y[r][si][t]+=bid.d[r][t-bid.t1]
+		#update prs
+		for r in rName:
+			bid.update_p(r,si)
+#		print p
+	
+	
+	#else reject it 
+		
+	return (x,p_hat)
+
+
+def init():
+
+	global rName
+	global y
+	global p
+
+	#initialize p and y
+	for r in rName:
+		y.setdefault(r,[])
+		p.setdefault(r,[])
+		for s in xrange(S):
+			p[r].append([])	
+			y[r].append([])
+			for t in xrange(T):
+				p[r][s].append(0)	
+				y[r][s].append(0)
+
+#	print y,p
+
+	global bids
+	bids=get_data()
+
+#	for bid in bids:
+#		print bid.t1
+#		print bid.t2
+#		print bid.d
+#		print bid.b
+
+				
 ''' __main__'''
 def execute_pd1():
 	
-	bids=[]
+	init()
+ 
+	#social welfare
+	sw_tot=0
+	for bid in bids:
+		(x,_p)=CORE(bid)	
+		sw_tot+=_p
+		print x,_p
+		print '------------------------------------'
+
+	print 'welfare total=',sw_tot
 	
-	U_tot=0
-	P_tot=0
+
+	for s in xrange(S):
+		f=open('s%d.mtx' % s,'w')
+		for r in rName:
+			for t in xrange(T):
+				f.write(str(y[r][s][t])+" ")
+			f.write("\n")
+
+		f.close()
+		 
 	
+	
+execute_pd1()	
 	
 	
 	
