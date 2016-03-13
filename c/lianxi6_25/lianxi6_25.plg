@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lianxi6_25 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/lianxi6_25.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\lianxi6_25\lianxi6_25.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/lianxi6_25.pdb" /debug /machine:I386 /out:"Debug/lianxi6_25.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\lianxi6_25.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11B.tmp"
+<h3>Output Window</h3>
+Compiling...
+lianxi6_25.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\lianxi6_25\lianxi6_25.cpp(28) : warning C4508: 'main' : function should return a value; 'void' return type assumed
+Linking...
+
+
+
+<h3>Results</h3>
+lianxi6_25.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

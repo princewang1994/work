@@ -1,0 +1,13 @@
+﻿生成启动时间为 2011-11-24 10:58:41。
+     1>项目“G:\新建文件夹\lianxi6_18\lianxi6_18.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“.\Debug\lianxi6_18.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt lianxi6_18.cpp
+         lianxi6_18.cpp
+     1>g:\新建文件夹\lianxi6_18\lianxi6_18.cpp(7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>已完成生成项目“G:\新建文件夹\lianxi6_18\lianxi6_18.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.79
