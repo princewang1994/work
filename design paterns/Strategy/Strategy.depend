@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1427198910 source:c:\users\administrator\desktop\strategy\main.cpp
+	<iostream>
+	"Person.h"
+	"Strategy.h"
+	"ByBus.h"
+	"StrategyFactory.h"
+	"Man.h"
+
+1427198629 c:\users\administrator\desktop\strategy\person.h
+	"string"
+	"Strategy.h"
+	"StrategyFactory.h"
+
+1427197993 c:\users\administrator\desktop\strategy\strategy.h
+	"string"
+
+1427196918 c:\users\administrator\desktop\strategy\bybus.h
+	"Strategy.h"
+	"string"
+
+1427198482 c:\users\administrator\desktop\strategy\strategyfactory.h
+	"ByBus.h"
+	"ByCar.h"
+
+1427197610 source:c:\users\administrator\desktop\strategy\car.c
+
+1427197744 c:\users\administrator\desktop\strategy\bycar.h
+
+1427198946 c:\users\administrator\desktop\strategy\man.h
+	"iostream"
+	"Person.h"
+

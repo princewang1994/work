@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1427358583 source:c:\users\administrator\desktop\chess\main.cpp
+	<iostream>
+	"ChessFactory.h"
+	"WhieChess.h"
+	"map"
+	"string"
+
+1427358845 c:\users\administrator\desktop\chess\chessfactory.h
+	"vector"
+	"Chess.h"
+	"string"
+	"WhieChess.h"
+	"BlackChess.h"
+
+1427357829 c:\users\administrator\desktop\chess\chess.h
+
+1427358630 c:\users\administrator\desktop\chess\whiechess.h
+	"Chess.h"
+
+1427358761 c:\users\administrator\desktop\chess\blackchess.h
+
