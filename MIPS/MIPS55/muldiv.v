@@ -1,0 +1,87 @@
+module mul_div(DA,DB,clk,op,L32,H32);
+  
+  
+   `include "op.v"
+    input [31:0] DA;
+    input [31:0] DB;
+    input clk;
+    input [1:0] op;
+    
+    reg [63:0] ans;
+    
+    
+    output reg [31:0]  L32;
+    output reg [63:32] H32;
+    
+    
+    reg [31:0] posDA;
+    
+    reg [31:0] posDB;
+    
+    always@(*)
+    begin
+       if(DA[31])
+          posDA <= ~DA+1;
+       else
+          posDA=DA;
+       if(DB[31])
+          posDB <= ~DB+1;
+       else
+          posDB=DB;
+    end
+    
+   
+    
+    
+    always@(*)
+    case(op)
+        `MD_MULT:
+        begin
+            if(DA[31]^DB[31])          
+               ans<=~(posDA*posDB)+1; 
+            else
+               ans<=posDA*posDB;
+          
+                        
+            L32<=ans[31:0];
+            H32<=ans[63:32];           
+        end        
+        
+        `MD_MULTU:
+        begin
+            ans<=DA*DB; 
+            L32<=ans[31:0];
+            H32<=ans[63:32];                
+        end   
+        
+        `MD_DIV:
+        begin
+            if(DA[31]^DB[31])  
+            begin       
+               L32<=~(posDA/posDB)+1;
+               H32<=DA[31] ? ~(posDA % posDB)+1 : posDA % posDB;
+            end 
+            else
+            begin
+               L32<=posDA/posDB; 
+               H32<=DA[31] ? ~(posDA % posDB)+1 : posDA % posDB;
+            end
+        end
+        
+        `MD_DIVU:
+        begin
+            L32<=DA/DB;
+            H32<=DA%DB;           
+        end   
+        
+    endcase
+    
+    
+   
+    
+    
+
+
+    
+
+endmodule

@@ -1,0 +1,341 @@
+module controller(clk,IR,Zero,PCWr,IRWr,RegSel,ExtOp,RFWr,WDSel,DMWr,ALUop,NPCOp,Bsel,Be);
+  
+  `include "op.v"
+  
+  input clk;
+  
+  input [31:0] IR;
+  
+  input Zero;
+  
+  output PCWr,RFWr,DMWr,Bsel;
+  
+  output IRWr;
+  
+  output [1:0] WDSel;
+  
+  output [1:0] RegSel;
+  
+  output [1:0] ExtOp;
+  
+  output [3:0] ALUop;
+  
+  output [1:0] NPCOp;
+  
+  output [3:0] Be;
+  
+  wire [3:0] newfsm;
+  
+  reg [3:0] fsm;  
+  
+  wire [5:0] op;
+  
+  wire [5:0] func;
+  
+  wire [4:0] rs;
+  
+  wire [4:0] rt;
+  
+  wire [4:0] rd;
+  
+  wire S0;
+  wire S1;
+  wire S2;
+  wire S3;
+  wire S4;
+  wire S5;
+  wire S6;
+  wire S7;
+  wire S8;
+  wire S9;
+  wire S10;
+  wire S11;
+
+//instructions
+  wire ADD ;
+  wire ADDU;
+  wire AND ;
+  wire NOR ;
+  wire OR  ;
+  wire SUB ;
+  wire SUBU;
+  wire XOR ;
+  wire SLT ;
+  wire SLTU;
+  wire SRAV;
+  wire SRLV;
+  wire SLLV;
+           
+  wire ORI ;
+  wire ADDI;
+  wire ANDI;
+  wire XORI;
+  wire LUI ;
+  wire ADDIU;
+  wire SLTI;
+  wire SLTIU;
+           
+  wire SLL ;
+  wire SRA ;
+  wire SRL ;
+           
+  wire J   ;
+  wire JAL ;
+           
+  wire JALR;
+  wire JR  ;
+           
+  wire LB  ;
+  wire LBU ;
+  wire LH  ;
+  wire LHU ;
+  wire LW  ;
+           
+  wire SB  ;
+  wire SH  ;
+  wire SW  ;
+           
+  wire BEQ ;
+  wire BNE ;
+  wire BGEZ;
+  wire BGTZ;
+  wire BLEZ;
+  wire BLTZ;
+           
+  wire MFC0;
+  wire MFHI;
+  wire MFLO;
+           
+  wire MTC0;
+  wire MTHI;
+  wire MTLO;
+          
+  wire MULT;
+  wire MULTU;
+  wire DIV;
+  wire DIVU;
+//assign
+//
+
+  assign ADD = ( op == `OP_ADD  )  
+  assign ADDU= ( op == `OP_ADDU )
+  assign AND = ( op == `OP_AND  )
+  assign NOR = ( op == `OP_NOR  )
+  assign OR  = ( op == `OP_OR   )
+  assign SUB = ( op == `OP_SUB  )
+  assign SUBU= ( op == `OP_SUBU )
+  assign XOR = ( op == `OP_XOR  )
+  assign SLT = ( op == `OP_SLT  )
+  assign SLTU= ( op == `OP_SLTU )
+  assign SRAV= ( op == `OP_SRAV )
+  assign SRLV= ( op == `OP_SRLV )
+  assign SLLV= ( op == `OP_SLLV )
+
+  assign ORI = ( op == `OP_ORI  )
+  assign ADDI= ( op == `OP_ADDI )
+  assign ANDI= ( op == `OP_ANDI )
+  assign XORI= ( op == `OP_XORI )
+  assign LUI = ( op == `OP_LUI  )
+  assign ADDIU=( op == `OP_ADDI )
+  assign SLTI= ( op == `OP_SLTI )
+  assign SLTIU=( op == `OP_SLTI )
+
+  assign SLL = ( op == `OP_SLL  )
+  assign SRA = ( op == `OP_SRA  )
+  assign SRL = ( op == `OP_SRL  )
+
+  assign J   = ( op == `OP_J    )
+  assign JAL = ( op == `OP_JAL  )
+  assign     = ( op == `OP_     )
+  assign JALR= ( op == `OP_JALR )
+  assign JR  = ( op == `OP_JR   )
+
+  assign LB  = ( op == `OP_LB   )
+  assign LBU = ( op == `OP_LBU  )
+  assign LH  = ( op == `OP_LH   )
+  assign LHU = ( op == `OP_LHU  )
+  assign LW  = ( op == `OP_LW   )
+
+  assign SB  = ( op == `OP_SB   )
+  assign SH  = ( op == `OP_SH   )
+  assign SW  = ( op == `OP_SW   )
+
+  assign BEQ = ( op == `OP_BEQ  )
+  assign BNE = ( op == `OP_BNE  )
+  assign BGEZ= ( op == `OP_BGEZ )
+  assign BGTZ= ( op == `OP_BGTZ )
+  assign BLEZ= ( op == `OP_BLEZ )
+  assign BLTZ= ( op == `OP_BLTZ )
+
+  assign MFC0= ( op == `OP_MFC0 )
+  assign MFHI= ( op == `OP_MFHI )
+  assign MFLO= ( op == `OP_MFLO )
+
+  assign MTC0= ( op == `OP_MTC0 )
+  assign MTHI= ( op == `OP_MTHI )
+  assign MTLO= ( op == `OP_MTLO )
+
+  assign MULT= ( op == `OP_MULT )
+  assign MULTU=( op == `OP_MULT )
+  assign DIV=  ( op == `OP_DIV  )
+  assign DIVU= ( op == `OP_DIVU )
+
+  assign ALU_INSTR;
+  assign ALU_INSTR=(op==0)||( ORI | ADDI| ANDI| XORI| LUI | ADDIU| SLTI| SLTIU );
+
+  wire J_INSTR;
+  assign J_INSTR=( J | JAL );
+
+  wire JR_INSTR;
+  assign JR_INSTR=( JALR| JR );
+
+  wire LD_INSTR;
+  assign LD_INSTR=( LB | LBU | LH  | LHU | LW  );
+
+  wire ST_INSTR;
+  assign ST_INSTR=( SB | SH | SW ) ;
+
+  wire B_INSTR;
+  assign B_INSTR=( BEQ | BNE | BGEZ| BGTZ| BLEZ| BLTZ ); 
+
+  wire MF_INSTR;
+  assign MF_INSTR=( MFC0| MFHI| MFLO );
+
+
+  wire MT_INSTR;
+  assign MT_INSTR=( MTC0| MTHI| MTLO );
+
+
+  wire MD_INSTR;
+  assign MD_INSTR=( MULT| MULTU| DIV| DIVU );
+
+  wire [20:0] test;
+
+ // assign test={PCWr,NPCOp,IRWr,RFWr,DMWr,ALUop,RegSel,WDSel,ExtOp,Bsel,Be};
+  
+    
+  assign op=IR[31:26];
+  
+  assign func=IR[5:0];
+  
+  assign rs=IR[25:21];
+  
+  assign rt=IR[20:16];
+  
+  assign rd=IR[15:11];
+  
+
+  assign addu=(op==`OP_ADDU && func==`FUNC_ADDU) ? 1:0;
+  assign subu=(op==`OP_SUBU && func==`FUNC_SUBU) ? 1:0;
+  assign lw=(op==`OP_LW) ? 1:0;
+  assign sw=(op==`OP_SW) ? 1:0;
+  assign ori=(op==`OP_ORI) ? 1:0;
+  assign beq=(op==`OP_BEQ) ? 1:0;
+  assign jal=(op==`OP_JAL) ? 1:0;
+  assign lui=(op==`OP_LUI) ? 1:0;
+  
+  assign S0 = (fsm==0);
+  assign S1 = (fsm==1);
+  assign S2 = (fsm==2);
+  assign S3 = (fsm==3);
+  assign S4 = (fsm==4);
+  assign S5 = (fsm==5);
+  assign S6 = (fsm==6);
+  assign S7 = (fsm==7);
+  assign S8 = (fsm==8);
+  assign S9 = (fsm==9);
+  assign S10= (fsm==10);
+  assign S11= (fsm==11);
+  
+  assign PCWr=S0|(beq&Zero&S8)|(jal&S9);
+  
+  assign IRWr=S0;
+  
+  assign RegSel=({2{addu}}&1)|({2{subu}}&1)|({2{jal}}&2);
+  
+  assign ExtOp=({2{(lw|sw)}}&`SE)|({2{ori}}&`ZE)|({4{lui}}&`HC);
+  
+  assign RFWr=(S7&(ori|lui|addu|subu))|(S9&jal)|(S4&lw);
+  
+  assign WDSel=({2{(lw|sw)}}&1)|({2{jal}}&2);
+  
+  assign DMWr=S5&sw;
+  
+  assign ALUop=({4{lw}}&`ADD)|({4{sw}}&`ADD)|({4{ori}}&`OR)|({4{lui}}&`OR)|({4{addu}}&`ADD)|({4{subu}}&`SUB)|({4{beq}}&`SUB);
+  
+  assign NPCOp=({2{S0}}&`PC_4)|({2{beq&(~S0)}}&`PC_BEQ)|({2{jal&(~S0)}}&`PC_JAL);
+  
+  assign Bsel=(lw|sw|ori|lui);
+  
+  assign Be=4'b1111;
+
+    
+  m_fsm U_FSM(fsm,ALU_INSTR,J_INSTR,JR_INSTR,LD_INSTR,ST_INSTR,B_INSTR,MF_INSTR, MT_INSTR,MD_INSTR,ready,newfsm);
+  
+
+  
+
+  initial 
+  begin
+    $monitor("init");
+    fsm=0;
+  end
+  always@(posedge clk)
+  begin
+      //$monitor( "fsm=%d,PCWr=%d,NPCop=%d,IRWr=%d,RFWr=%d,DMWr=%d,ALUop=%d,RegSel=%d,WDSel=%d,ExtOp=%d,BSel=%d,Be=%d", fsm, PCWr,NPCOp,IRWr,RFWr,DMWr,ALUop,RegSel,WDSel,ExtOp,Bsel,Be ) ;
+      fsm <= newfsm; 
+  end
+  
+  
+endmodule
+
+module m_fsm(fsm,ALU_INSTR,J_INSTR,JR_INSTR,LD_INSTR,ST_INSTR,B_INSTR,MF_INSTR, MT_INSTR,MD_INSTR,ready,newfsm);
+   
+   input ready;
+   
+   input ALU_INSTR,J_INSTR,JR_INSTR,LD_INSTR,ST_INSTR,B_INSTR,MF_INSTR, MT_INSTR,MD_INSTR;
+   
+   input [3:0] fsm;
+   
+   output reg [3:0] newfsm;
+
+   
+  always @(*)
+  case(fsm)
+    0: newfsm<=1;
+    1:begin 
+      if(ALU_INSTR|JR_INSTR|MF_INSTR|MT_INSTR)
+          newfsm<=6;
+       if(LD_INSTR|ST_INSTR)
+          newfsm<=2;
+       if(J_INSTR)
+          newfsm<=9;
+       if(B_INSTR)
+          newfsm<=8;
+       if(MD_INSTR)
+          newfsm<=10;
+    end       
+    2: begin
+       if(LD_INSTR)
+          newfsm<=3;
+       if(ST_INSTR)
+          newfsm<=5;
+       end
+    3:newfsm<=4;
+    4:newfsm<=0;
+    5:newfsm<=0;
+    6:newfsm<=7;
+    7:newfsm<=0;
+    8:newfsm<=0;
+    9:newfsm<=0;
+    10:if(ready)
+          newfsm<=11;
+       else
+          newfsm<=10;
+    11:newfsm<=0;
+    default: newfsm<=0;
+  endcase
+   
+   
+   
+endmodule 

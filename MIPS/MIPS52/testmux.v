@@ -1,0 +1,29 @@
+module testmux;
+  
+    reg [2:0] osel;
+    
+    wire [7:0] out1;
+    wire [4:0] out2;
+    wire [5:0] out3;
+    
+    mux2#(.WIDTH(8)) m2 (0,1,osel[0],out1);
+    mux4#(.WIDTH(5)) m4 (0,1,2,3,osel[1:0],out2);
+    mux8#(.WIDTH(6)) m8 (0,1,2,3,4,5,6,7,osel,out3);
+    
+    initial      
+    begin
+       #80 osel=0;
+       #80 osel=osel+1;
+       #80 osel=osel+1;
+       #80 osel=osel+1;
+       #80 osel=osel+1;
+       #80 osel=osel+1;
+       #80 osel=osel+1;
+       #80 osel=osel+1;
+       //#80 osel=osel+1;
+      #300 $finish; 
+    end
+    
+    
+  
+endmodule

@@ -1,0 +1,22 @@
+module npc(PC,Imm26,NPCop,NPC,PC_4);
+  `include "op.v"
+  input [31:2] PC;
+  input [25:0] Imm26;
+  input [1:0] NPCop;
+  output  [31:2] NPC;
+  output [31:2] PC_4;  
+  
+  reg NPC;
+  assign PC_4=PC+1;
+  
+  always @(*)
+  case(NPCop)
+    
+    `PC_4:NPC <= PC+1;
+    
+    `PC_BEQ:NPC <= PC+{{14{Imm26[15]}},Imm26[15:0]};
+    
+    `PC_JAL:NPC <= {PC[31:28],Imm26[25:0]};
+    
+  endcase
+endmodule

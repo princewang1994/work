@@ -1,0 +1,160 @@
+module controller(clk,IR,Zero,PCWr,IRWr,RegSel,ExtOp,RFWr,WDSel,DMWr,ALUop,NPCOp,Bsel,Be);
+  
+  `include "op.v"
+  
+  input clk;
+  
+  input [31:0] IR;
+  
+  input Zero;
+  
+  output PCWr,RFWr,DMWr,Bsel;
+  
+  output IRWr;
+  
+  output [1:0] WDSel;
+  
+  output [1:0] RegSel;
+  
+  output [1:0] ExtOp;
+  
+  output [3:0] ALUop;
+  
+  output [1:0] NPCOp;
+  
+  output [3:0] Be;
+  
+  wire [3:0] newfsm;
+  
+  reg [3:0] fsm;
+  
+  
+  wire [5:0] op;
+  
+  wire [5:0] func;
+  
+  wire S0;
+  wire S1;
+  wire S2;
+  wire S3;
+  wire S4;
+  wire S5;
+  wire S6;
+  wire S7;
+  wire S8;
+  wire S9;
+  
+  wire addu,subu,lw,sw,ori,beq,jal;
+  
+  wire [20:0] test;
+  assign test={PCWr,NPCOp,IRWr,RFWr,DMWr,ALUop,RegSel,WDSel,ExtOp,Bsel,Be};
+  
+    
+  assign op=IR[31:26];
+  
+  assign func=IR[5:0];
+  
+  assign addu=(op==`OP_ADDU && func==`FUNC_ADDU) ? 1:0;
+  assign subu=(op==`OP_SUBU && func==`FUNC_SUBU) ? 1:0;
+  assign lw=(op==`OP_LW) ? 1:0;
+  assign sw=(op==`OP_SW) ? 1:0;
+  assign ori=(op==`OP_ORI) ? 1:0;
+  assign beq=(op==`OP_BEQ) ? 1:0;
+  assign jal=(op==`OP_JAL) ? 1:0;
+  assign lui=(op==`OP_LUI) ? 1:0;
+  
+  assign S0 = (fsm==0)?1:0;
+  assign S1 = (fsm==1)?1:0;
+  assign S2 = (fsm==2)?1:0;
+  assign S3 = (fsm==3)?1:0;
+  assign S4 = (fsm==4)?1:0;
+  assign S5 = (fsm==5)?1:0;
+  assign S6 = (fsm==6)?1:0;
+  assign S7 = (fsm==7)?1:0;
+  assign S8 = (fsm==8)?1:0;
+  assign S9 = (fsm==9)?1:0;
+  
+  assign PCWr=S0|(beq&Zero&S8)|(jal&S9);
+  
+  assign IRWr=S0;
+  
+  assign RegSel=({2{addu}}&1)|({2{subu}}&1)|({2{jal}}&2);
+  
+  assign ExtOp=({2{(lw|sw)}}&`SE)|({2{ori}}&`ZE)|({4{lui}}&`HC);
+  
+  assign RFWr=(S7&(ori|lui|addu|subu))|(S9&jal)|(S4&lw);
+  
+  assign WDSel=({2{(lw|sw)}}&1)|({2{jal}}&2);
+  
+  assign DMWr=S5&sw;
+  
+  assign ALUop=({4{lw}}&`ADD)|({4{sw}}&`ADD)|({4{ori}}&`OR)|({4{lui}}&`OR)|({4{addu}}&`ADD)|({4{subu}}&`SUB)|({4{beq}}&`SUB);
+  
+  assign NPCOp=({2{S0}}&`PC_4)|({2{beq&(~S0)}}&`PC_BEQ)|({2{jal&(~S0)}}&`PC_JAL);
+  
+  assign Bsel=(lw|sw|ori|lui);
+  
+  assign Be=4'b1111;
+
+    
+  m_fsm U_FSM(op,func,fsm,newfsm);
+  
+
+  
+
+  initial 
+  begin
+    $monitor("init");
+    fsm=0;
+  end
+  always@(posedge clk)
+  begin
+      //$monitor( "fsm=%d,PCWr=%d,NPCop=%d,IRWr=%d,RFWr=%d,DMWr=%d,ALUop=%d,RegSel=%d,WDSel=%d,ExtOp=%d,BSel=%d,Be=%d", fsm, PCWr,NPCOp,IRWr,RFWr,DMWr,ALUop,RegSel,WDSel,ExtOp,Bsel,Be ) ;
+      fsm <= newfsm; 
+  end
+  
+  
+endmodule
+
+module m_fsm(op,func,fsm,newfsm);
+   
+   input [5:0] op;
+   input [5:0] func;
+   input [3:0] fsm;
+   
+   output reg [3:0] newfsm;
+
+   
+   
+   //assign newfsm=fsm+1;  
+  always @(*)
+  case(fsm)
+    0: newfsm<=1;
+    1: case(op)
+         `OP_LW: newfsm<=2;
+         `OP_SW: newfsm<=2;
+         `OP_ADDU:newfsm<=6;
+         `OP_SUBU:newfsm<=6;
+         `OP_LUI:newfsm<=6;
+         `OP_BEQ:newfsm<=8;
+         `OP_JAL:newfsm<=9;
+         `OP_ORI:newfsm<=6;
+       endcase
+       
+    2: case(op)
+         `OP_LW:newfsm<=3;
+         `OP_SW:newfsm<=5;
+       endcase
+    3:newfsm<=4;
+    4:newfsm<=0;
+    5:newfsm<=0;
+    6:newfsm<=7;
+    7:newfsm<=0;
+    8:newfsm<=0;
+    9:newfsm<=0;
+    default: newfsm<=0;
+  endcase
+   
+   
+   
+endmodule 

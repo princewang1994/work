@@ -1,0 +1,88 @@
+# Reading G:/Modelsim/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile {G:/MIPS CPU/work/alu.v} 
+vsim -voptargs=+acc work.gpr
+# vsim -voptargs=+acc work.gpr 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.gpr(fast)
+# Break key hit 
+quit -sim
+vlog -work {G:/MIPS CPU/work/work} -refresh -force_refresh
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Refreshing module alu
+# -- Refreshing module dm_4k
+# -- Refreshing module gpr
+# -- Refreshing module im_4k
+# -- Refreshing module npc
+# -- Refreshing module pc
+# -- Refreshing module test
+# -- Refreshing module testAlu
+# -- Refreshing module testDm
+vcom -work {G:/MIPS CPU/work/work} -refresh -force_refresh
+# Model Technology ModelSim SE vcom 10.1a Compiler 2012.02 Feb 22 2012
+# -- Skipping module alu
+# -- Skipping module dm_4k
+# -- Skipping module gpr
+# -- Skipping module im_4k
+# -- Skipping module npc
+# -- Skipping module pc
+# -- Skipping module test
+# -- Skipping module testAlu
+# -- Skipping module testDm
+project open {G:/MIPS CPU/work/mips}
+# Loading project mips
+# Compile of alu.v was successful.
+# Compile of dm.v was successful.
+# Compile of ext.v was successful.
+# Compile of gpr.v was successful.
+# Compile of im.v was successful.
+# Compile of mips.v was successful.
+# Compile of npc.v failed with 1 errors.
+# Compile of pc.v was successful.
+# Compile of test.v was successful.
+# Compile of testAlu.v was successful.
+# Compile of testDm.v was successful.
+# Compile of mux.v was successful.
+# 12 compiles, 1 failed with 1 error. 
+# Compile of mips.v was successful.
+# Compile of mini_machine.v was successful.
+# Compile of mini_machine.v was successful.
+# Compile of mini_machine.v was successful.
+# Compile of ext.v failed with 1 errors.
+# Compile of ext.v failed with 1 errors.
+# Compile of alu.v was successful.
+# Compile of dm.v was successful.
+# Compile of ext.v failed with 3 errors.
+# Compile of gpr.v was successful.
+# Compile of im.v was successful.
+# Compile of mips.v was successful.
+# Compile of npc.v was successful.
+# Compile of pc.v was successful.
+# Compile of test.v was successful.
+# Compile of testAlu.v was successful.
+# Compile of testDm.v was successful.
+# Compile of mux.v was successful.
+# Compile of mini_machine.v was successful.
+# 13 compiles, 1 failed with 3 errors. 
+# Compile of ext.v failed with 2 errors.
+# Compile of ext.v failed with 2 errors.
+# Compile of ext.v failed with 2 errors.
+# Compile of ext.v failed with 2 errors.
+# Compile of ext.v failed with 2 errors.
+# Compile of ext.v failed with 1 errors.
+# Compile of ext.v failed with 1 errors.
+# Compile of ext.v failed with 3 errors.
+# Compile of ext.v was successful.
+# Compile of ext.v was successful.
+# Compile of ext.v was successful.
+# Compile of pc.v was successful.
+# Compile of pc.v was successful.

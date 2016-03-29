@@ -1,0 +1,153 @@
+{G:/MIPS CPU/mips55/alu.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/alu.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {G:/MIPS CPU/mips55/mux.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/mux.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux2
+-- Compiling module mux4
+-- Compiling module mux8
+
+Top level modules:
+	mux2
+	mux4
+	mux8
+
+} {} {}} {G:/MIPS CPU/mips55/pc.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/pc.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} {G:/MIPS CPU/mips55/cp0.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/cp0.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module cp0
+
+Top level modules:
+	cp0
+
+} {} {}} {G:/MIPS CPU/mips55/controller.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/controller.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module controller
+-- Compiling module m_fsm
+-- Compiling module ALU_OP
+
+Top level modules:
+	controller
+
+} {} {}} {G:/MIPS CPU/mips55/test_mul.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/test_mul.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module test_mul
+
+Top level modules:
+	test_mul
+
+} {} {}} {G:/MIPS CPU/mips55/testim.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testim.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testIm
+
+Top level modules:
+	testIm
+
+} {} {}} {G:/MIPS CPU/mips55/op.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/op.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} {G:/MIPS CPU/mips55/test.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/test.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {G:/MIPS CPU/mips55/gpr.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/gpr.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module gpr
+
+Top level modules:
+	gpr
+
+} {} {}} {G:/MIPS CPU/mips55/testext.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testext.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testext
+
+Top level modules:
+	testext
+
+} {} {}} {G:/MIPS CPU/mips55/testDm.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testDm.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testDm
+
+Top level modules:
+	testDm
+
+} {} {}} {G:/MIPS CPU/mips55/testmux.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testmux.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testmux
+
+Top level modules:
+	testmux
+
+} {} {}} {G:/MIPS CPU/mips55/testAlu.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testAlu.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testAlu
+
+Top level modules:
+	testAlu
+
+} {} {}} {G:/MIPS CPU/mips55/testinclude.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testinclude.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} {G:/MIPS CPU/mips55/im.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/im.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module im
+
+Top level modules:
+	im
+
+} {} {}} {G:/MIPS CPU/mips55/mips.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/mips.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mips55
+
+Top level modules:
+	mips55
+
+} {} {}} {G:/MIPS CPU/mips55/dm.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/dm.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module dm
+
+Top level modules:
+	dm
+
+} {} {}} {G:/MIPS CPU/mips55/ext.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/ext.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ext
+
+Top level modules:
+	ext
+
+} {} {}} {G:/MIPS CPU/mips55/testctr.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/testctr.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testCtr
+
+Top level modules:
+	testCtr
+
+} {} {}} {G:/MIPS CPU/mips55/npc.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/npc.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module npc
+
+Top level modules:
+	npc
+
+} {} {}} {G:/MIPS CPU/mips55/muldiv.v} {1 {vlog -work work -vopt {G:/MIPS CPU/mips55/muldiv.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mul_div
+
+Top level modules:
+	mul_div
+
+} {} {}}

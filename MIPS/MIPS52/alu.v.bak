@@ -1,0 +1,39 @@
+module alu(A,B,ALUop,Zero,GEZ,C);
+  
+  `include "op.v"
+  
+  input [31:0] A;
+  input [31:0] B;
+  input [3:0] ALUop;
+
+  output Zero;
+  output GEZ;
+  output [31:0] C;
+  //dsjfadsjdlsjafldsjfa
+  
+  reg [31:0] ans;
+  
+  
+  assign Zero=( ans==0);
+  assign GEZ= ( ans[31]==0 );
+  assign C=ans;
+  
+
+  always@(*)
+  case (ALUop)
+      `ADD : ans <= A+B;
+      `SUB : ans <= A-B;
+      `AND : ans <= A&B;
+      `OR  : ans <= A|B;
+      `XOR : ans <= A^B;
+      `SLL : ans <= B<<A[4:0];
+      `SRA : ans <= ({32{B[31]}}<<(32-A[4:0]))|(B>>A);
+      `SRL : ans <= B>>A ;
+      `NOR : ans <= ~(A|B);
+      `SLT : ans <= A - B < 0 ? 1:0;
+      `SLTU : ans <= {1'b0,A} < {1'b0,B} ? 1:0;
+      `ADDU : ans <= {1'b0,A}+{1'b0,B};
+      `SUBU : ans <= {1'b0,A}-{1'b0,B};
+  endcase
+  
+endmodule

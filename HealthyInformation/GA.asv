@@ -1,0 +1,104 @@
+function [ weight, index ] = GA( data , cls )
+%UNTITLED3 Summary of this function goes here
+%   Detailed explanation goes here
+
+    n_pop=30;
+    
+    n_generation=10000;
+    
+    n_feature=size(data,2);
+    
+    p_var=0.1;    
+    
+    %data=normalization(data);
+    
+    pop=init_pop(n_pop,n_feature);
+    
+    elit_fid=fopen('elit.txt','a+'); 
+    
+    history_max=0;
+    
+    %elit=gene_bin;
+    
+    %GA body
+    for i = 1: n_generation
+        
+        %pop
+        
+        new_pop=zeros(n_pop,n_feature);
+        
+        npop_count=1;
+        
+        %calculate total fit rate
+        fr=zeros(1,n_pop);
+        for k=1:n_pop
+            fr(k)=svm_fit_rate(data,cls,pop(k,:));
+            fr(k)=1-exp(sum(pop(k,:))-20);
+        end              
+        
+        
+        
+        [m,index]=max(fr);       
+        
+        fprintf('max_fitrate=%f,select %d genes\n',m,sum(pop(index,:)));
+        
+        if m > history_max
+                elit=pop(index,:);
+                history_max=m;
+                fprintf(elit_fid,'%d\n',history_max);
+                for el= 1: n_feature
+                       fprintf(elit_fid,'%d ',elit(el));
+                end
+                fprintf(elit_fid,'\n');
+        end
+            
+              
+        
+        fr=exp(20*fr);
+        
+        %select p
+        p=fr/sum(fr);
+        
+        
+        for k=1:n_pop/2         
+
+            %select a pair of parents
+            g1=select(p);
+            g2=select(p);
+
+            %consort
+            [o1,o2]=cross(pop(g1,:),pop(g2,:)); 
+            
+            
+            %variation
+            pv=rand();
+            if(pv<p_var)
+               o1=variation(o1);
+            end
+            
+            pv=rand();
+            if(pv<p_var)
+               o2=variation(o2);
+            end
+            
+            new_pop(npop_count,:)=o1;
+            new_pop(npop_count+1,:)=o2;
+            
+            npop_count=npop_count+2;            
+            
+        end
+        
+        %updata population
+        pop=new_pop;       
+        
+        
+    end
+  
+    weight=sum(pop)./sum(sum(pop));
+    
+    [ weight, index ] = sort(weight);
+    
+    
+
+end
+

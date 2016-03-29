@@ -1,0 +1,40 @@
+%load data
+gene=load('data.txt');
+gene=gene';
+
+%person: id:gene:class
+person=load('_metadata_test.txt');
+
+gene=normalization(gene);
+
+person=person(:,3);
+
+%sort type
+Type=classification(person,3);
+
+%var 
+s={[];[];[]};
+
+%sum of mutual distance
+m=[mean(gene(Type{1},:));mean(gene(Type{2},:));mean(gene(Type{3},:))];
+
+%以每个基因作为分类的三个类型的中点差值
+dis=(m(1,:)-m(2,:)).^2+(m(1,:)-m(3,:)).^2+(m(2,:)-m(3,:)).^2;
+
+for i=1:3
+    s{i}=var(gene(Type{i},:));
+end
+
+sum_s=(s{1}+s{2}+s{3})./dis;
+[ss,index]=sort(sum_s);
+
+x=index(1);
+y=index(2);
+z=index(3);
+
+%gplot3(gene,Type,x,y,z);
+g=zeros(1,size(gene,2));
+
+g(index(1:50))=1;
+
+GA()

@@ -1,0 +1,540 @@
+m255
+K3
+13
+cModel Technology
+dG:\MIPS CPU
+valu
+VYLNNWMB^kR?VD7g]KUF5P1
+r1
+31
+I]b8KkEd1][DQKlX5V2kP50
+Z0 dG:\MIPS CPU\mips55
+Z1 w1456900454
+8G:/MIPS CPU/mips55/alu.v
+FG:/MIPS CPU/mips55/alu.v
+Fop.v
+L0 1
+Z2 OE;L;10.1a;51
+Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 Hci[QC7H57lOV?8^h[8G<3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/alu.v|
+!s108 1456900709.320000
+!s107 op.v|G:/MIPS CPU/mips55/alu.v|
+!i10b 1
+!s85 0
+vALU_OP
+V]H?Feg=X>YN[HFWnm2Lze1
+r1
+31
+ISQMfZmQkjFggNiaNnDNSP1
+Z4 dG:\MIPS CPU\mips55
+Z5 w1456911842
+Z6 8G:/MIPS CPU/mips55/controller.v
+Z7 FG:/MIPS CPU/mips55/controller.v
+L0 379
+R2
+Z8 !s108 1456911849.370000
+Z9 !s107 op.v|G:/MIPS CPU/mips55/controller.v|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/controller.v|
+R3
+n@a@l@u_@o@p
+!s100 fMM[1fClSkAR2Y6Wc1c^h0
+!i10b 1
+!s85 0
+vcontroller
+V_dV`8F7TSMdVbK4Om`XQ?3
+r1
+31
+IaE:Z4ZAihn6HNOGl]?HV83
+R4
+R5
+R6
+R7
+Fop.v
+L0 1
+R2
+R8
+R9
+R10
+R3
+!s100 he8JHh4b3GIb8a?@>D[V[1
+!i10b 1
+!s85 0
+vcp0
+Vfk:YKMiT7m=La:^T?aL:R3
+r1
+31
+IzdziPlhzX`@9VFC9`N4o31
+R4
+w1456575306
+8G:/MIPS CPU/mips55/cp0.v
+FG:/MIPS CPU/mips55/cp0.v
+L0 1
+R2
+R3
+!s100 L6QmL48e3lzSf[[D8R<5>3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/cp0.v|
+!s108 1456900719.122000
+!s107 G:/MIPS CPU/mips55/cp0.v|
+!i10b 1
+!s85 0
+vdm
+VUJ<5lA_o]PkILo@z@Z>ma2
+r1
+31
+I95hQEf9=DDB`DSJHnBdSM1
+R4
+w1456758025
+8G:/MIPS CPU/mips55/dm.v
+FG:/MIPS CPU/mips55/dm.v
+L0 1
+R2
+R3
+!s100 dm7h[?m:jKmMFHn:>V0=D3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/dm.v|
+!s108 1456900709.716000
+!s107 G:/MIPS CPU/mips55/dm.v|
+!i10b 1
+!s85 0
+vdm_4k
+V>F2Nc1kLk0ceSkN;Xhb5=2
+r1
+31
+ID]92mSbzeMVcQCcX:ScOR3
+Z11 dG:\MIPS CPU\work
+w1446102111
+8G:/MIPS CPU/work/dm.v
+FG:/MIPS CPU/work/dm.v
+L0 1
+R2
+R3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/work/dm.v|
+!s107 G:/MIPS CPU/work/dm.v|
+!s100 XajD3]2TKILiSf^z0fJRV1
+!s108 1447252694.501000
+!i10b 1
+!s85 0
+vext
+V57kPOM8Q6NdoEHeKn;f3e0
+r1
+31
+IE<Zo_G3ScT;Um;9?FToQW1
+R4
+R1
+8G:/MIPS CPU/mips55/ext.v
+FG:/MIPS CPU/mips55/ext.v
+Fop.v
+L0 1
+R2
+R3
+!s100 Ke56`m0XgGmkocdnm:S0d3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/ext.v|
+!s108 1456900709.831000
+!s107 op.v|G:/MIPS CPU/mips55/ext.v|
+!i10b 1
+!s85 0
+vfsm
+VJcfNB?LKN7B][CUTJYm613
+r1
+31
+I3e=UR4za0`5V@VUXKG6a:2
+R11
+w1446947970
+8G:/MIPS CPU/work/controller.v
+FG:/MIPS CPU/work/controller.v
+L0 31
+R2
+R3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/work/controller.v|
+!s107 G:/MIPS CPU/work/controller.v|
+!s108 1446947973.964000
+!s100 3aSzC:]bSKS=?<A`F=k4j3
+!i10b 1
+!s85 0
+vgpr
+Vc^zf>1]406o7J[k3If3gf3
+r1
+31
+I9@bD@3;^LFjYSUTV;57B:2
+R4
+w1456802593
+8G:/MIPS CPU/mips55/gpr.v
+FG:/MIPS CPU/mips55/gpr.v
+L0 1
+R2
+R3
+!s100 g8U_Pg3^>f1cVK3e2GJBm1
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/gpr.v|
+!s108 1456900709.948000
+!s107 G:/MIPS CPU/mips55/gpr.v|
+!i10b 1
+!s85 0
+vim
+VcXlHcTn@S[<8]jhCQzi5O1
+r1
+31
+IUhJNHgKzD577S3BCQj<Jh1
+R4
+w1456909687
+8G:/MIPS CPU/mips55/im.v
+FG:/MIPS CPU/mips55/im.v
+Fop.v
+L0 1
+R2
+R3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/im.v|
+!s100 `CO^i4dClNFe`hl>fmj[C0
+!s108 1456909691.122000
+!s107 op.v|G:/MIPS CPU/mips55/im.v|
+!i10b 1
+!s85 0
+vim_4k
+V7NIR5eTHWjMZ=;2IILG`M3
+r1
+31
+IjXZ_3FiNA@J6cF9kF8V_K0
+R11
+w1447251471
+8G:/MIPS CPU/work/im.v
+FG:/MIPS CPU/work/im.v
+L0 1
+R2
+R3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/work/im.v|
+!s107 G:/MIPS CPU/work/im.v|
+!s100 MO[A;Fm]oP`h[:DGF6eJ]0
+!s108 1447251473.506000
+!i10b 1
+!s85 0
+vm_fsm
+VYF@m]PRU_Ko[Wd`hfMW4Q3
+r1
+31
+IT5:>@DfRTHeZ@K_agchRO0
+R4
+R5
+R6
+R7
+L0 336
+R2
+R8
+R9
+R10
+R3
+!s100 Pn7>8=ojo<9=CcQTLkH8k0
+!i10b 1
+!s85 0
+vmips
+I<ab3DbVBa4o5hIAEE81b[1
+V:QCXfneMX];`lJjeh<oD91
+R4
+w1447504621
+Z12 8G:/MIPS CPU/mips55/mips.v
+Z13 FG:/MIPS CPU/mips55/mips.v
+L0 1
+R2
+r1
+31
+R3
+Z14 !s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/mips.v|
+!s107 G:/MIPS CPU/mips55/mips.v|
+!s100 H^5gTcJJ@z4__;D;M<ViC2
+!s108 1447572658.433000
+!i10b 1
+!s85 0
+vmips55
+VQ^B<gdFIgmQEz@05JVaKU1
+r1
+31
+I;O4I_=C<UVfP4zfEC2<<63
+R4
+w1456910186
+R12
+R13
+Fop.v
+L0 1
+R2
+R14
+R3
+!s100 6d6h:Tz33T7Z5PRJMi^cS1
+!s108 1456910191.017000
+!s107 op.v|G:/MIPS CPU/mips55/mips.v|
+!i10b 1
+!s85 0
+vmul_div
+!i10b 1
+Ve?N^9K^T=I=Ul>LR^f]@N1
+r1
+!s85 0
+31
+I5U2j]EUl6cmnWaJQm:QMA3
+R4
+w1456973353
+8G:/MIPS CPU/mips55/muldiv.v
+FG:/MIPS CPU/mips55/muldiv.v
+Fop.v
+L0 1
+R2
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/muldiv.v|
+R3
+!s100 S=@KP:TnDA>UR9DPP9TQL3
+!s108 1456973355.849000
+!s107 op.v|G:/MIPS CPU/mips55/muldiv.v|
+vmux
+Vd^YP]jWOoZMD6EonN@?B10
+r1
+31
+IR>UKXaLo^81ne0eID[bX33
+R11
+w1447252641
+8G:/MIPS CPU/work/testmux.v
+FG:/MIPS CPU/work/testmux.v
+L0 1
+R2
+R3
+!s107 G:/MIPS CPU/work/testmux.v|
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/work/testmux.v|
+!s100 :VIn16F;k:S:h0N]2[Dz^2
+!s108 1447252642.750000
+!i10b 1
+!s85 0
+vmux2
+VGJ_9oEmc@<B6i0D7C1lY52
+r1
+31
+IkX4ZLP<I@jmLVZN>oCQe;3
+R4
+Z15 w1447253079
+Z16 8G:/MIPS CPU/mips55/mux.v
+Z17 FG:/MIPS CPU/mips55/mux.v
+L0 1
+R2
+Z18 !s108 1456900711.164000
+Z19 !s107 G:/MIPS CPU/mips55/mux.v|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/mux.v|
+R3
+!s100 T_UHf95m93IZBi2kO;3Go2
+!i10b 1
+!s85 0
+vmux4
+VnTLWSzgT_HWc3cfQD`cgL2
+r1
+31
+IH;iV13RV=KSCB`7kn@L5D3
+R4
+R15
+R16
+R17
+L0 17
+R2
+R18
+R19
+R20
+R3
+!s100 c?L1j<jAPIXU3dKB483E[2
+!i10b 1
+!s85 0
+vmux8
+IgBil;Z<Bc8CePiT>bN8ib3
+Vjb<ec[NbolI3HFH>CbK`e1
+R4
+R15
+R16
+R17
+L0 47
+R2
+r1
+31
+R18
+R19
+R20
+R3
+!s100 gh80g76zNMa2J9@4j::1V1
+!i10b 1
+!s85 0
+vnpc
+VA<@lV96k7<ND1jC?aDC1U3
+r1
+31
+I@LEknH4LmiMTV=o2G>`kg1
+R4
+R1
+8G:/MIPS CPU/mips55/npc.v
+FG:/MIPS CPU/mips55/npc.v
+Fop.v
+L0 1
+R2
+R3
+!s100 ;NR^lfmonI^2^SmD^`B0>2
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/npc.v|
+!s108 1456900714.252000
+!s107 op.v|G:/MIPS CPU/mips55/npc.v|
+!i10b 1
+!s85 0
+vpc
+VRV1z;V9H]JCF7UOdRoVSM2
+r1
+31
+IH4=`1Wl=YU`?Ba8YfPCPY3
+R4
+R1
+8G:/MIPS CPU/mips55/pc.v
+FG:/MIPS CPU/mips55/pc.v
+Fop.v
+L0 1
+R2
+R3
+!s100 ;=b3gV?LSQI[16C`=SP;M2
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/pc.v|
+!s108 1456900717.965000
+!s107 op.v|G:/MIPS CPU/mips55/pc.v|
+!i10b 1
+!s85 0
+vtest
+Vk<3<[f=78GX=_HO53D;7>3
+r1
+31
+I=iG`W?bjgMnn]gVEl<HRz0
+R4
+w1447662113
+8G:/MIPS CPU/mips55/test.v
+FG:/MIPS CPU/mips55/test.v
+L0 1
+R2
+R3
+!s100 eYnCSPF5KeN0e4PQE[0_]3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/test.v|
+!s108 1456900718.072000
+!s107 G:/MIPS CPU/mips55/test.v|
+!i10b 1
+!s85 0
+vtest_mul
+I12<no@7AY_R^9Ol064AaL1
+VJnZ@g@NWTGDQBgY]iGcS]3
+R4
+w1447913955
+8G:/MIPS CPU/mips55/test_mul.v
+FG:/MIPS CPU/mips55/test_mul.v
+L0 1
+R2
+r1
+31
+R3
+!s100 k;JZ0KNnOBgHR`U]liZOJ2
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/test_mul.v|
+!s108 1456900719.006000
+!s107 G:/MIPS CPU/mips55/test_mul.v|
+!i10b 1
+!s85 0
+vtestAlu
+IiG2SWEO]eIdI2zlj>O4VE0
+V`mffD=iNk>GN:I]0>VlI_1
+R4
+w1447574755
+8G:/MIPS CPU/mips55/testAlu.v
+FG:/MIPS CPU/mips55/testAlu.v
+L0 2
+R2
+r1
+31
+R3
+ntest@alu
+!s100 `69NJhPKX7aE^i50;ob9g0
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/testAlu.v|
+!s108 1456900718.179000
+!s107 G:/MIPS CPU/mips55/testAlu.v|
+!i10b 1
+!s85 0
+vtestCtr
+Io8Go`WFCL<MVDC?=C4C0S3
+V3LAOh6S5NG<]d[kMf_lB30
+R4
+w1449124203
+8G:/MIPS CPU/mips55/testctr.v
+FG:/MIPS CPU/mips55/testctr.v
+L0 1
+R2
+r1
+31
+R3
+ntest@ctr
+!s100 1X^0jSklVJZfCI_djbF`?1
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/testctr.v|
+!s108 1456900718.279000
+!s107 G:/MIPS CPU/mips55/testctr.v|
+!i10b 1
+!s85 0
+vtestDm
+I[o_SIYJIXkhHM=[^FIo1A0
+V6DCEj^WKAk;Fgl2jD4g>R0
+R4
+w1446099509
+8G:/MIPS CPU/mips55/testDm.v
+FG:/MIPS CPU/mips55/testDm.v
+L0 2
+R2
+r1
+31
+R3
+ntest@dm
+!s100 5MDmL8X510<3zoYH?Z5g>0
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/testDm.v|
+!s108 1456900718.381000
+!s107 G:/MIPS CPU/mips55/testDm.v|
+!i10b 1
+!s85 0
+vtestext
+I0`GZ^C4<1OgdiI31J9azo2
+V35LjQ^7>B8;NJTb3V>=B80
+R4
+w1446701155
+8G:/MIPS CPU/mips55/testext.v
+FG:/MIPS CPU/mips55/testext.v
+L0 1
+R2
+r1
+31
+R3
+!s100 I?<QhV^<MQNYj9nQ7C3_c0
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/testext.v|
+!s108 1456900718.484000
+!s107 G:/MIPS CPU/mips55/testext.v|
+!i10b 1
+!s85 0
+vtestIm
+I87`BLhociA_XWhdlocjKK3
+V5^XQe14_Y1eT0L3G`44X71
+R4
+w1447252220
+8G:/MIPS CPU/mips55/testim.v
+FG:/MIPS CPU/mips55/testim.v
+L0 2
+R2
+r1
+31
+R3
+ntest@im
+!s100 8VL3EWB`<G3HHcD`bCQ8A3
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/testim.v|
+!s108 1456900718.601000
+!s107 G:/MIPS CPU/mips55/testim.v|
+!i10b 1
+!s85 0
+vtestmux
+ITdO10eCO8BFeN9AlYC3CR3
+Vk?=J@j5@L5E@IM07j2Q_]0
+R4
+w1447253563
+8G:/MIPS CPU/mips55/testmux.v
+FG:/MIPS CPU/mips55/testmux.v
+L0 1
+R2
+r1
+31
+R3
+!s100 ^BSPW6E0KHO]j[dZ;HYjf1
+!s90 -reportprogress|300|-work|work|-vopt|G:/MIPS CPU/mips55/testmux.v|
+!s108 1456900718.788000
+!s107 G:/MIPS CPU/mips55/testmux.v|
+!i10b 1
+!s85 0

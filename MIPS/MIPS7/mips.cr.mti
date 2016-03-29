@@ -1,0 +1,131 @@
+{G:/MIPS CPU/work/testmux.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testmux.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testmux
+
+Top level modules:
+	testmux
+
+} {} {}} {G:/MIPS CPU/work/testAlu.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testAlu.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testAlu
+
+Top level modules:
+	testAlu
+
+} {} {}} {G:/MIPS CPU/work/testinclude.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testinclude.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} {G:/MIPS CPU/work/im.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/im.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module im
+
+Top level modules:
+	im
+
+} {} {}} {G:/MIPS CPU/work/mips.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/mips.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} {G:/MIPS CPU/work/npc.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/npc.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module npc
+
+Top level modules:
+	npc
+
+} {} {}} {G:/MIPS CPU/work/dm.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/dm.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module dm
+
+Top level modules:
+	dm
+
+} {} {}} {G:/MIPS CPU/work/testctr.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testctr.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testCtr
+
+Top level modules:
+	testCtr
+
+} {} {}} {G:/MIPS CPU/work/ext.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/ext.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ext
+
+Top level modules:
+	ext
+
+} {} {}} {G:/MIPS CPU/work/alu.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/alu.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {G:/MIPS CPU/work/mux.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/mux.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module mux2
+-- Compiling module mux4
+-- Compiling module mux8
+
+Top level modules:
+	mux2
+	mux4
+	mux8
+
+} {} {}} {G:/MIPS CPU/work/pc.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/pc.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} {G:/MIPS CPU/work/controller.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/controller.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module controller
+-- Compiling module m_fsm
+
+Top level modules:
+	controller
+
+} {} {}} {G:/MIPS CPU/work/testim.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testim.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testIm
+
+Top level modules:
+	testIm
+
+} {} {}} {G:/MIPS CPU/work/op.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/op.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} {G:/MIPS CPU/work/test.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/test.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {G:/MIPS CPU/work/gpr.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/gpr.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module gpr
+
+Top level modules:
+	gpr
+
+} {} {}} {G:/MIPS CPU/work/testDm.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testDm.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testDm
+
+Top level modules:
+	testDm
+
+} {} {}} {G:/MIPS CPU/work/testext.v} {1 {vlog -work work -vopt {G:/MIPS CPU/work/testext.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module testext
+
+Top level modules:
+	testext
+
+} {} {}}
