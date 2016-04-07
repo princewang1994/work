@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1460034841 source:/home/prince/work/LeetCode/csp4/main.cpp
+	<iostream>
+	<queue>
+	<stdlib.h>
+	<stdio.h>
+
