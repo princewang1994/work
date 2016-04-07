@@ -2,7 +2,7 @@ function [ weight, index ] = GA( data , cls )
 %UNTITLED3 Summary of this function goes here
 %   Detailed explanation goes here
 
-    n_pop=20;
+    n_pop=50;
     
     n_generation=10000;
     
@@ -18,12 +18,14 @@ function [ weight, index ] = GA( data , cls )
     
     history_max=0;
     
+    Type=classification(cls,3);
+    
     %elit=gene_bin;
     
     %GA body
     for i = 1: n_generation
         
-        %pop
+        %new pop
         
         new_pop=zeros(n_pop,n_feature);
         
@@ -32,8 +34,11 @@ function [ weight, index ] = GA( data , cls )
         %calculate total fit rate
         fr=zeros(1,n_pop);
         for k=1:n_pop
-            fr(k)=svm_fit_rate(data,cls,pop(k,:));
-            %fr(k)=fr(k)*(1-exp(sum(pop(k,:))-10));
+            fr(k)=meet_rate(data,cls,pop(k,:));
+           %fr(k)=fr(k)-sum(pop(k,:))/100+0.5;
+%             if(sum(pop(k,:))>200)
+%                 fr(k)=0;
+%             end
         end                     
         
         [m,index]=max(fr);       
@@ -51,7 +56,7 @@ function [ weight, index ] = GA( data , cls )
         end
             
              
-        
+        %change survive rate
         fr=exp(20*fr);
         
         %select p

@@ -37,30 +37,36 @@ function [ fr ] = fit_rate( data,class,gene_bin)
         cls_m(i,:)=mean(p_data(class{i},:),1);
     end
     
-    Sb=0;
+    Sb=sum((cls_m(1,:)-cls_m(3,:)).^2);
     
-    for i = 1:nclass
-        for j=1:nclass
-            Sb=Sb+sum((cls_m(i,:)-cls_m(j,:)).^2);
-        end
-    end
     
-    Sb=Sb/nclass;
+    
+    %Sb=Sb/nclass;
     
     %cls_m
     %Sb=sum(sum((cls_m-repmat(m,nclass,1)).^2))/nclass;
     
-    Sw=zeros(1,nclass);
+    Sw=0;
     
-    for i = 1:length(class)
-        ni=length(class{i});
-        xi=p_data(class{i},:);
-        mm=repmat(cls_m(i,:),ni,1);
-       % xi-mm 
-        Sw(i)=sum(sum((xi-mm).^2))/ni;
-    end
+    n1=length(class{1});
+    x1=p_data(class{1},:);
+    mm1=repmat(cls_m(1,:),n1,1);
+    Sw=Sw+sum(sum((x1-mm1).^2))/n1;
     
-    fr=Sb/(sum(Sw)/nclass);    
+    n3=length(class{3});
+    x3=p_data(class{3},:);
+    mm3=repmat(cls_m(3,:),n3,1);
+    Sw=Sw+sum(sum((x3-mm3).^2))/n3;
+%     
+%     for i = 1:length(class)
+%         ni=length(class{i});
+%         xi=p_data(class{i},:);
+%         mm=repmat(cls_m(i,:),ni,1);
+%        % xi-mm 
+%         Sw(i)=sum(sum((xi-mm).^2))/ni;
+%     end
+
+    fr=Sb/Sw;
 
 end
 

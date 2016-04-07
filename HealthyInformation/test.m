@@ -11,7 +11,7 @@ function [ meetrate ] = test( data, g, label )
         end
     end
     
-    meetrate=ERM(data(:,gene),label);
+    meetrate=ERM(data(:,gene),label,get_group(label,2));
 
 end
 

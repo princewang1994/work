@@ -1,7 +1,9 @@
-function [ class ] = KNN( data, cls, nclass , k, ob )
+function [ class, prob ] = KNN( data, cls, nclass , k, ob )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
+    prob=zeros(size(ob,1),1);
+    
     row=size(data,1);
     
     n_test=size(ob,1);
@@ -25,12 +27,17 @@ function [ class ] = KNN( data, cls, nclass , k, ob )
         for i = 1 : k
              c=cls(neighbor(i));
              %count(c)=count(c)-log(0.5*dis(neighbor(i)));
-             count(c)=count(c)+1;
+             %count(c)=count(c)+1;
+             count(c)=count(c)+1/dis(neighbor(i));
         end
     
+        %count
         [m,res]=max(count);
         
         class(t)=res;
+        
+        prob(t)=m/sum(count);
+        
         
     end
 
