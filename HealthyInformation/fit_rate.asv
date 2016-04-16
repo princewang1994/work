@@ -37,15 +37,11 @@ function [ fr ] = fit_rate( data,class,gene_bin)
         cls_m(i,:)=mean(p_data(class{i},:),1);
     end
     
-    Sb=0;
+    Sb=sum((cls_m(1,:)-cls_m(3,:)).^2);
     
-    for i = 1:nclass
-        for j=1:nclass
-            Sb=Sb+(cls_m(i,:)-cls_m(j,:)).^2;
-        end
-    end
     
-    Sb=Sb/nclass;
+    
+    %Sb=Sb/nclass;
     
     %cls_m
     %Sb=sum(sum((cls_m-repmat(m,nclass,1)).^2))/nclass;
@@ -60,7 +56,7 @@ function [ fr ] = fit_rate( data,class,gene_bin)
         Sw(i)=sum(sum((xi-mm).^2))/ni;
     end
     
-    fr=Sb/(sum(Sw)/nclass);      
+    fr=Sb/(sum(Sw)/nclass);    
 
 end
 

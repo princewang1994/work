@@ -1,16 +1,5 @@
-%load data
-gene=load('data.txt');
-gene=gene';
-
-%person: id:gene:class
-person=load('_metadata_test.txt');
-
-gene=normalization(gene);
-
-person=person(:,3);
-
 %sort type
-Type=classification(person,3);
+Type=classification(label,3);
 
 %var 
 s={[];[];[]};

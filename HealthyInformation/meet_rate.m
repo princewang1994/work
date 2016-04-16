@@ -1,4 +1,4 @@
-function [ fr ] = svm_fit_rate( data,class_vec,gene_bin)
+function [ mr ] = meet_rate( data,class_vec,gene_bin)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -12,10 +12,11 @@ function [ fr ] = svm_fit_rate( data,class_vec,gene_bin)
             gene(k)=i;
             k=k+1;
         end
-    end    
+    end   
     
-    fr=ERM(data(:,gene),class_vec,2);
+    group=get_group(class_vec,3);
     
+    mr=ERM(data(:,gene),class_vec,group);   
     
     
 
