@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1460811870 source:/home/prince/work/LeetCode/problem283/main.cpp
+	<iostream>
+	<vector>
+
