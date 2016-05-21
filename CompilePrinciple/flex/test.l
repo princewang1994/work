@@ -10,7 +10,6 @@
 [\ \n\t]                   
 (-)?([1-9][0-9]*|0)          printf("Integer     : %s\n",yytext); 
 [0-9]*\.[0-9]+      printf("Float   : %s\n",yytext); 
-[\+\-\*\/\%]       printf("Op      : %s\n",yytext); 
 
 (main) 		 	printf("(main) 	  	:%s\n",yytext);
 (auto)         		printf("(auto)    	:%s\n",yytext);
@@ -46,7 +45,7 @@
 (sizeof)        	printf("(sizeof)  	:%s\n",yytext);
 (return)        	printf("(return)  	:%s\n",yytext);
 
-[a-zA-Z][a-zA-Z0-9]*  printf("ID     : %s\n",yytext); 
+[a-zA-Z_][a-zA-Z0-9_]*  printf("ID     : %s\n",yytext); 
 
 
 
