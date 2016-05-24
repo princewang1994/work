@@ -1,0 +1,123 @@
+%{ 
+	#include<stdio.h> 
+	#include"y.tab.h"
+%} 
+
+%% 
+
+
+
+(main) 		{	printf("MAIN ");		return MAIN;	} 
+(auto)         	{	printf("AUTO ");		return AUTO;	}
+(short)  	{	printf("SHORT ");		return SHORT;	}
+(int)    	{	printf("INT ");			return INT;     }
+(long)   	{	printf("LONG ");		return LONG;	}
+(float)  	{	printf("FLOAT ");		return FLOAT;	}
+(double) 	{	printf("DOUBLE ");		return DOUBLE;	}
+(char)   	{	printf("CHAR ");		return CHAR;	}
+(struct) 	{	printf("STRUCT ");		return STRUCT;	}
+(union)  	{	printf("UNION ");		return UNION;	}
+(enum)   	{	printf("ENUM ");		return ENUM;	}
+(typedef)	{	printf("TYPEDEF ");		return TYPEDEF;	}
+(const)         {	printf("CONST ");		return CONST;	}
+(unsigned)      {	printf("UNSIGNED ");		return UNSIGNED;}
+(signed) 	{	printf("SIGNED ");		return SIGNED;	}
+(extern)	{	printf("EXTERN ");		return EXTERN;	}
+(register)      {	printf("REGISTER ");		return REGISTER;}
+(static)        {	printf("STATIC ");		return STATIC;	}
+(volatile)	{	printf("VOLATILE ");		return VOLATILE;}
+(void)   	{	printf("VOID ");		return VOID;	}
+(if)     	{	printf("IF " );			return IF; }
+(else)   	{	printf("ELSE ");		return ELSE;	}
+(switch) 	{	printf("SWITCH ");		return SWITCH;	}
+(case)   	{	printf("CASE ");		return CASE;	}
+(for)    	{	printf("FOR " );		return FOR;     }
+(do)     	{	printf("DO " );		 	return DO;       }
+(while)  	{	printf("WHILE ");		return WHILE;	}
+(goto)   	{	printf("GOTO ");		return GOTO;	}
+(continue)      {	printf("CONTINUE ");		return CONTINUE;}
+(break)  	{	printf("BREAK ");		return BREAK;	}
+(default) 	{	printf("DEFAULT ");		return DEFAULT;	}
+(sizeof)        {	printf("SIZEOF ");		return SIZEOF;	}
+(return)        {	printf("RETURN ");		return RETURN;	}
+
+
+
+
+
+
+
+
+(\()                   {		printf("LEFT " );			return LEFT;	} 
+(\))                   {		printf("RIGHT " );			return RIGHT;	}
+(\[)                   {		printf("LEFT_E " );			return LEFT_E;	}
+(\])                   {		printf("RIGHT_E " );			return RIGHT_E;	}
+(->)                   {		printf("ARROW " );			return ARROW;	}
+(\.)                   {		printf("DOT " );			return DOT;	}
+(!)                    {		printf("MARK " );			return MARK;	}
+(~)                    {		printf("TILDE " );			return TILDE;	}
+(\+\+)                 {		printf("INC " );			return INC;	}
+(--)                   {		printf("DEC " );			return DEC;	}
+(-)                    {		printf("SUB " );			return SUB;	}
+(\*)                   {		printf("STAR " );			return STAR;	}
+(&)                    {		printf("BIT_AND " );			return BIT_AND;	}
+(\/)                   {		printf("SLASH " );			return SLASH;	}
+(\%)                   {		printf("PERCENT " );			return PERCENT;	}
+(\+)                   {		printf("PLUS " );			return PLUS;	}
+(<<)                   {		printf("LEFT_SHIFT " );			return LEFT_SHIFT;}
+(>>)                   {		printf("RIGHT_SHIFT " );		return RIGHT_SHIFT;}
+(<)                    {		printf("LT " );				return LT;}
+(<=)                   {		printf("LE " );				return LE;}
+(>)                    {		printf("GT " );				return GT;}
+(>=)                   {		printf("GE " );				return GE;}
+(==)                   {		printf("EQU " );			return EQU;	}
+(!=)                   {		printf("NEQ " );			return NEQ;	}
+(\^)                   {		printf("HAT " );			return HAT;	}
+(\|)                   {		printf("BIT_OR " );			return BIT_OR;	}
+(&&)                   {		printf("AND " );			return AND;	}
+(\|\|)                 {		printf("OR " );				return OR;	}
+(\?)                   {		printf("QES " );			return QES;	}
+(=)                    {		printf("ASSIGN " );			return ASSIGN;	}
+(\+=)                  {		printf("PLUS_ASSI " );			return PLUS_ASSIGN;}
+(-=)                   {		printf("SUB_ASSIGN " );			return SUB_ASSIGN;}
+(\*=)                  {		printf("MUL_ASSGIN " );			return MUL_ASSGIN;}
+(\/=)                  {		printf("DIV_ASSIGN " );			return DIV_ASSIGN;}        
+(\%=)                  {		printf("MOD_ASSIGN " );			return MOD_ASSIGN;}
+(>>=)                  {		printf("RIGHT_SHIFT_ASSIGN " );		return RIGHT_SHIFT_ASSIGN;}
+(<<=)                  {		printf("LEFT_SHIFT_ASSIGN " );		return LEFT_SHIFT_ASSIGN;}
+(&=)                   {		printf("AND_ASSIGN " );			return AND_ASSIGN;}
+(^=)                   {		printf("XOR_ASSIGN " );			return XOR_ASSIGN;}
+(\|=)                  {		printf("OR_ASSGIN " );			return OR_ASSGIN;}
+(,)                    {		printf("COMMA " );			return COMMA;}
+(;)                    {		printf("SEMICOLON " );			return SEMICOLON;}
+(:)                    {		printf("COLON " );			return COLON;}
+(\{)                   {		printf("LEFT_BRACE " );			return LEFT_BRACE;}
+(\})		       {		printf("RIGHT_BRACE " );		return RIGHT_BRACE;}
+(\n)		       {		printf("\n" );				return RIGHT_BRACE;}
+
+
+
+#.*			{		printf("PRECOMPILE ");	 		return PRECOMPILE;	}
+\".*\"			{		printf("STRING	");	 		return STRING;	}
+((-)?([1-9][0-9]*|0))|(0x[a-fA-f0-9]+)     {	 printf("CONST_INT ");  	return CONST_INT;	}
+(-)?([1-9][0-9]*|0)\.[0-9]+     {	 printf("CONSTFLOAT ");	 		return CONST_FLOAT;	} 
+(\/\/.*\n)      		{	 printf("NOTATION "); 			return NOTATION;	} 
+[a-zA-Z_][a-zA-Z0-9_]*  	{	 printf("ID ");	 			return ID;	}
+
+[\ \n\t]              
+.              printf("Unknown : %c\n", yytext[0]);
+
+
+
+
+
+
+
+
+%%
+int main()
+{
+	yyin=fopen("test.c","r"); 
+	yylex(); /* 进行分析 */  
+}
+int yywrap() {  return 1; } 

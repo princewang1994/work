@@ -99,7 +99,7 @@
 #.*					printf("(Precompile)	:%s\n",yytext);
 \".*\"					printf("(String)	:%s\n",yytext);
 [\ \n\t]              
-((-)?([1-9][0-9]*|0))|(0x[a-fA-f0-9]+)     printf("(Integer)     :%s\n",yytext); 
+((-)?([1-9][0-9]*|0))|(0x[a-fA-F0-9]+)     printf("(Integer)     :%s\n",yytext); 
 (-)?([1-9][0-9]*|0)\.[0-9]+     printf("(Float)     :%s\n",yytext); 
 (\/\/.*\n)      		printf("(Notation)   : %s\n",yytext); 
 [a-zA-Z_][a-zA-Z0-9_]*  printf("ID     :%s\n",yytext); 
