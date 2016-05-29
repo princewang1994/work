@@ -30,8 +30,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_YY_BISON_TAB_H_INCLUDED
-# define YY_YY_BISON_TAB_H_INCLUDED
+#ifndef YY_YY_Y_TAB_H_INCLUDED
+# define YY_YY_Y_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -78,59 +78,100 @@ extern int yydebug;
     DEFAULT = 288,
     SIZEOF = 289,
     RETURN = 290,
-    LEFT = 291,
-    RIGHT = 292,
-    LEFT_E = 293,
-    RIGHT_E = 294,
-    ARROW = 295,
-    DOT = 296,
-    MARK = 297,
-    TILDE = 298,
-    INC = 299,
-    DEC = 300,
-    SUB = 301,
-    STAR = 302,
-    BIT_AND = 303,
-    SLASH = 304,
-    PERCENT = 305,
-    PLUS = 306,
-    LEFT_SHIFT = 307,
-    RIGHT_SHIFT = 308,
-    LT = 309,
-    LE = 310,
-    GT = 311,
-    GE = 312,
-    EQU = 313,
-    NEQ = 314,
-    HAT = 315,
-    BIT_OR = 316,
-    AND = 317,
-    OR = 318,
-    QES = 319,
-    ASSIGN = 320,
-    PLUS_ASSIGN = 321,
-    SUB_ASSIGN = 322,
-    MUL_ASSGIN = 323,
-    DIV_ASSIGN = 324,
-    MOD_ASSIGN = 325,
-    RIGHT_SHIFT_ASSIGN = 326,
-    LEFT_SHIFT_ASSIGN = 327,
-    AND_ASSIGN = 328,
-    XOR_ASSIGN = 329,
-    OR_ASSGIN = 330,
-    COMMA = 331,
-    SEMICOLON = 332,
-    COLON = 333,
-    LEFT_BRACE = 334,
-    RIGHT_BRACE = 335,
-    PRECOMPILE = 336,
-    STRING = 337,
-    CONST_INT = 338,
-    CONST_FLOAT = 339,
-    NOTATION = 340,
-    ID = 341
+    INLINE = 291,
+    ARROW = 292,
+    INC = 293,
+    DEC = 294,
+    LEFT_SHIFT = 295,
+    RIGHT_SHIFT = 296,
+    LE = 297,
+    GE = 298,
+    EQU = 299,
+    NEQ = 300,
+    AND = 301,
+    OR = 302,
+    PLUS_ASSIGN = 303,
+    SUB_ASSIGN = 304,
+    MUL_ASSIGN = 305,
+    DIV_ASSIGN = 306,
+    MOD_ASSIGN = 307,
+    RIGHT_SHIFT_ASSIGN = 308,
+    LEFT_SHIFT_ASSIGN = 309,
+    AND_ASSIGN = 310,
+    XOR_ASSIGN = 311,
+    OR_ASSIGN = 312,
+    PRECOMPILE = 313,
+    STRING = 314,
+    CONST_INT = 315,
+    CONST_FLOAT = 316,
+    NOTATION = 317,
+    ID = 318,
+    LINE = 319
   };
 #endif
+/* Tokens.  */
+#define MAIN 258
+#define AUTO 259
+#define SHORT 260
+#define INT 261
+#define LONG 262
+#define FLOAT 263
+#define DOUBLE 264
+#define CHAR 265
+#define STRUCT 266
+#define UNION 267
+#define ENUM 268
+#define TYPEDEF 269
+#define CONST 270
+#define UNSIGNED 271
+#define SIGNED 272
+#define EXTERN 273
+#define REGISTER 274
+#define STATIC 275
+#define VOLATILE 276
+#define VOID 277
+#define IF 278
+#define ELSE 279
+#define SWITCH 280
+#define CASE 281
+#define FOR 282
+#define DO 283
+#define WHILE 284
+#define GOTO 285
+#define CONTINUE 286
+#define BREAK 287
+#define DEFAULT 288
+#define SIZEOF 289
+#define RETURN 290
+#define INLINE 291
+#define ARROW 292
+#define INC 293
+#define DEC 294
+#define LEFT_SHIFT 295
+#define RIGHT_SHIFT 296
+#define LE 297
+#define GE 298
+#define EQU 299
+#define NEQ 300
+#define AND 301
+#define OR 302
+#define PLUS_ASSIGN 303
+#define SUB_ASSIGN 304
+#define MUL_ASSIGN 305
+#define DIV_ASSIGN 306
+#define MOD_ASSIGN 307
+#define RIGHT_SHIFT_ASSIGN 308
+#define LEFT_SHIFT_ASSIGN 309
+#define AND_ASSIGN 310
+#define XOR_ASSIGN 311
+#define OR_ASSIGN 312
+#define PRECOMPILE 313
+#define STRING 314
+#define CONST_INT 315
+#define CONST_FLOAT 316
+#define NOTATION 317
+#define ID 318
+#define LINE 319
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -144,4 +185,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_BISON_TAB_H_INCLUDED  */
+#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
