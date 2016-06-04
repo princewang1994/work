@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1464432247 source:g:\gitresp\leetcode\nk1\main.cpp
+	<iostream>
+	<stdlib.h>
+	<algorithm>
+

@@ -1,0 +1,10 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: HellowTex.aux
+I couldn't open style file math.bst
+---line 2 of file HellowTex.aux
+ : \bibstyle{math
+ :               }
+I'm skipping whatever remains of this command
+I found no \citation commands---while reading file HellowTex.aux
+I found no \bibdata command---while reading file HellowTex.aux
+I found no style file---while reading file HellowTex.aux
+(There were 4 error messages)
