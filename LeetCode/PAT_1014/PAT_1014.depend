@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1472226969 source:d:\work\leetcode\pat_1017\main.cpp
+1471081786 source:d:\work\leetcode\pat_1014\main.cpp
 	<iostream>
-	<stdio.h>
 	<queue>
 	<stdio.h>
 	<string.h>
+	<stdlib.h>
 

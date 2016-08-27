@@ -1,4 +1,7 @@
+
+
 #include <iostream>
+#include <stdio.h>
 #include <queue>
 #include <stdio.h>
 #include <string.h>
@@ -16,9 +19,9 @@ public:
 public:
   int value() const
   {
-   // cout << h * 3600 + m * 60 + s << endl;
     return h * 3600 + m * 60 + s;
   }
+
 
   bool operator < (Bank b) const
   {
@@ -39,22 +42,16 @@ int main()
 
     priority_queue<Bank> q;
 
-    cin >> N >> K;
+    scanf("%d", &N);
+    scanf("%d", &K);
 
-    while(N --)
+    while(N--)
     {
-        char str[10];
         Bank bank;
-        cin >> str;
-        cin >> bank.time;
         if(bank.time > 60)
             bank.time = 60;
-        int h = (str[0] - '0') * 10 + str[1] - '0';
-        int m = (str[3] - '0') * 10 + str[4] - '0';
-        int s = (str[6] - '0') * 10 + str[7] - '0';
-        bank.h = h;
-        bank.m = m;
-        bank.s = s;
+        scanf("%d:%d:%d", &bank.h, &bank.m, &bank.s);
+        scanf("%d", &bank.time);
         q.push(bank);
     }
 
@@ -64,12 +61,11 @@ int main()
     {
         Bank b = q.top();
         q.pop();
-        //cout << b.value() <<endl;
         if(b.value() < 8 * 3600)
         {
             wait += que[early] - b.value();
             que[early] += b.time * 60;
-            int min = 9999999;
+            int min = 0x3f3f3f3f;
             int index = 0;
             for(int i = 0; i < K; i++)
             {
@@ -83,13 +79,20 @@ int main()
         }
         else if(b.value() > 17 * 3600)
         {
-            continue;
+            break;
         }
         else
         {
-            wait += (que[early] >= b.value() ? que[early] - b.value() : 0);
-            que[early] += b.time * 60;
-            int min = 9999999;
+            if(que[early] > b.value())
+            {
+                wait += que[early] - b.value();
+                que[early] += b.time * 60;
+            }
+            else
+            {
+                que[early] = b.value() + b.time * 60;
+            }
+            int min = 0x3f3f3f3f;
             int index = 0;
             for(int i = 0; i < K; i++)
             {
@@ -107,7 +110,7 @@ int main()
     if( n == 0 )
     {
         printf("0.0\n");
-        return;
+        return 0;
     }
     printf("%.1f", double((int((double)wait/n/60 * 10+ 0.5)))/10);
 
