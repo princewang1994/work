@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1470549603 source:d:\work\leetcode\pat_1100\main.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	<map>
+

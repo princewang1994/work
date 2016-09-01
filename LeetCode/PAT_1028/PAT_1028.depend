@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1472723671 source:g:\gitresp\leetcode\pat_1028\main.cpp
 	<iostream>
 	<vector>
@@ -6,4 +7,12 @@
 	<algorithm>
 	<cstring>
 	<cstdlib>
+=======
+1471083087 source:d:\work\leetcode\pat_1028\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<algorithm>
+	<vector>
+>>>>>>> ead268e952adb1204a75b25adbdf5731a39fefaf
 

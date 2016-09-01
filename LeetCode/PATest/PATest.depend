@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1472264235 source:d:\work\leetcode\patest\main.cpp
+	<iostream>
+	<queue>
+	<vector>
+
