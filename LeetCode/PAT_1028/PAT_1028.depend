@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1472723671 source:g:\gitresp\leetcode\pat_1028\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+	<cstring>
+	<cstdlib>
+

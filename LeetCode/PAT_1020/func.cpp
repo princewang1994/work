@@ -1,0 +1,8 @@
+namespace wyj
+{
+
+    void func()
+    {
+
+    }
+}

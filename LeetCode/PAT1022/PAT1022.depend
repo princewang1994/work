@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1469199838 source:g:\gitresp\leetcode\pat1022\main.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+

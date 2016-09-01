@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1469340519 source:g:\gitresp\leetcode\dist\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+

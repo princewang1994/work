@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    cout<<islower('R')<<endl;
+    return 0;
     char b1[2000];
     char b2[2000];
 

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1468985776 source:g:\gitresp\leetcode\pat_1020\main.cpp
+	<iostream>
+	<stdio.h>
+	"func.cpp"
+	<algorithm>
+
+1468986934 source:g:\gitresp\leetcode\pat_1020\func.cpp
+
+1468986825 g:\gitresp\leetcode\pat_1020\func.cpp
+
